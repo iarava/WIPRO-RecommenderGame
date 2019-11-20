@@ -179,6 +179,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2088134304144634931, guid: 08f8315f03b80e54da55506e125dc325,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088134304144634931, guid: 08f8315f03b80e54da55506e125dc325,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088134304144634931, guid: 08f8315f03b80e54da55506e125dc325,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088134304144634931, guid: 08f8315f03b80e54da55506e125dc325,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f8315f03b80e54da55506e125dc325, type: 3}
 --- !u!20 &934490723 stripped
@@ -1262,6 +1282,26 @@ PrefabInstance:
     - target: {fileID: 7918345925543524492, guid: 08f8315f03b80e54da55506e125dc325,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088134304144634931, guid: 08f8315f03b80e54da55506e125dc325,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088134304144634931, guid: 08f8315f03b80e54da55506e125dc325,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088134304144634931, guid: 08f8315f03b80e54da55506e125dc325,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088134304144634931, guid: 08f8315f03b80e54da55506e125dc325,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
