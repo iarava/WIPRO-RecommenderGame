@@ -29,22 +29,26 @@ public class Move : MonoBehaviour
 
     private void OnMoveLeft()
     {
-        isMoveLeft = true;
+        if(rb.position.x > -6.0f)
+            isMoveLeft = true;      
     }
 
     private void OnMoveRight()
     {
-        isMoveRight = true;
+        if (rb.position.x < 6.0f)
+            isMoveRight = true;
     }
 
     private void OnMoveUp()
     {
-        isMoveUp = true;
+        if (rb.position.y < 3.0f)
+            isMoveUp = true;
     }
 
     private void OnMoveDown()
     {
-        isMoveDown = true;
+        if (rb.position.y > -2.0f)
+            isMoveDown = true;
     }
 
     private void FixedUpdate()
