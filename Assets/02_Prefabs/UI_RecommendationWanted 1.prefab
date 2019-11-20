@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2133266590226223704}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI_RecommendationWanted 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 7699404424837441131}
   - component: {fileID: 4971351358842863132}
   - component: {fileID: 1277600399632215145}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 261839273087227033}
   - component: {fileID: 6976306654923434232}
   - component: {fileID: 6358156368697498245}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas RecommendationWanted
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: -814123849
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &6976306654923434232
