@@ -30,7 +30,7 @@ public class Move : MonoBehaviour
     private void OnMoveLeft()
     {
         if(rb.position.x > -6.0f)
-            isMoveLeft = true;      
+            isMoveLeft = true;    
     }
 
     private void OnMoveRight()
@@ -53,27 +53,26 @@ public class Move : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Vector3 pos = Vector3.zero;
+
         if (isMoveLeft)
-        {
-            rb.MovePosition(transform.position + Vector3.left * Time.fixedDeltaTime * speed);
-            isMoveLeft = false;
-        }
+            pos += Vector3.left * Time.fixedDeltaTime * speed;
 
         if (isMoveRight)
-        {
-            rb.MovePosition(transform.position + Vector3.right * Time.fixedDeltaTime * speed);
-            isMoveRight = false;
-        }
+            pos += Vector3.right * Time.fixedDeltaTime * speed;
 
         if (isMoveUp)
-        {
-            rb.MovePosition(transform.position + Vector3.up * Time.fixedDeltaTime * speed);
-            isMoveUp = false;
-        }
+            pos += Vector3.up * Time.fixedDeltaTime * speed;
 
         if (isMoveDown)
+            pos += Vector3.down * Time.fixedDeltaTime * speed;
+
+        if(isMoveLeft || isMoveRight || isMoveUp || isMoveDown)
         {
-            rb.MovePosition(transform.position + Vector3.down * Time.fixedDeltaTime * speed);
+            rb.MovePosition(transform.position + pos);
+            isMoveLeft = false;
+            isMoveRight = false;
+            isMoveUp = false;
             isMoveDown = false;
         }
     }
