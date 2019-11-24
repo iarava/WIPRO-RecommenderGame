@@ -141,8 +141,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83250435c9fdda047b2b9a35e97817fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLevel: 15
-  timeUpdate: 0.2
+  levels:
+  - {fileID: 11400000, guid: 6ad26c93669300041901c6de8f6965bd, type: 2}
+  - {fileID: 11400000, guid: 77d56a572c1c46242965fb80252bce18, type: 2}
+  - {fileID: 11400000, guid: a1d6cf1214369334e83c51d35e0d991c, type: 2}
+  timeUpdate: 1
 --- !u!4 &701390823
 Transform:
   m_ObjectHideFlags: 0

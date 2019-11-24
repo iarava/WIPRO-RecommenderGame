@@ -9,11 +9,11 @@ public class TimerBar : MonoBehaviour
     [SerializeField]
     private Image foregroundImage;
     [SerializeField]
-    private float updateSpeedSeconds = 0.05f;
+    private float updateSpeedSeconds = 0.1f;
     [SerializeField]
     private Timer timer;
 
-    private float timeLevel = 15f;
+    private float timeLevel;
 
     // Start is called before the first frame update
     private void Awake()
@@ -25,7 +25,7 @@ public class TimerBar : MonoBehaviour
     private void HandleTimeSet(float time)
     {
         timeLevel = time;
-        HandleTimeChanged(timeLevel);
+        HandleTimeChanged(0);
     }
 
     private void HandleTimeChanged(float time)

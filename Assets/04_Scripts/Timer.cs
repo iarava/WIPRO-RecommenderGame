@@ -6,9 +6,11 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     [SerializeField]
-    private float timeLevel = 15.0f;
+    private LevelDefinition[] levels = null;
+
+    private float timeLevel = 0.0f;
     [SerializeField]
-    private float timeUpdate = 0.2f;
+    private float timeUpdate = 1.0f;
 
     private float timeNextUpdate;
     private float lastTimestamp;
@@ -19,6 +21,8 @@ public class Timer : MonoBehaviour
 
     private void Awake()
     {
+        timeLevel = levels[LevelManager.level].LevelTime;
+        Debug.Log(timeLevel);
         lastTimestamp = Time.time;
         timeNextUpdate = timeUpdate;
         OnTimeSet(timeLevel);
@@ -41,7 +45,7 @@ public class Timer : MonoBehaviour
             {
                 timerRunning = false;
                 Debug.Log("Stop Level");
-                LevelManager.LevelFinished();
+                LevelManager.LevelTimeElapsed();
             }
         }
         
