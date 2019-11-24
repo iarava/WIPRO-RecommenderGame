@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 2590877263171990447}
   - component: {fileID: 2558501740170897847}
   - component: {fileID: 8233054651097413561}
+  - component: {fileID: 8193181115884337354}
   m_Layer: 5
   m_Name: Panel TimeBar
   m_TagString: Untagged
@@ -228,6 +229,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &8193181115884337354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5663184918045906607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce4ed19e19df2f488dc18517823fbc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foregroundImage: {fileID: 7432505985937838936}
+  updateSpeedSeconds: 0.05
+  timer: {fileID: 0}
 --- !u!1 &6893869140874853294
 GameObject:
   m_ObjectHideFlags: 0

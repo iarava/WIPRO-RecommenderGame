@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLevel: 15
-  timeUpdate: 1
+  timeUpdate: 0.2
 --- !u!4 &701390823
 Transform:
   m_ObjectHideFlags: 0
@@ -935,5 +935,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 934490723}
+    - target: {fileID: 8193181115884337354, guid: 7a5a6f8e27db7924f85ebe3e049cab9a,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 701390822}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a5a6f8e27db7924f85ebe3e049cab9a, type: 3}
