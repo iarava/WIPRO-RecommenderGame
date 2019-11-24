@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/01_Scenes/Working Space/Luca/Luca_Level.unity
+    guid: 683b6ac8b79a3b14ab06f4ed56e1c26c
   m_configObjects: {}
