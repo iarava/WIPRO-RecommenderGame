@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIController : MonoBehaviour
+public class UIStartMenuController : MonoBehaviour
 {
     public void onStartPressed()
     {
