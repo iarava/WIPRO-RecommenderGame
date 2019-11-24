@@ -14,6 +14,12 @@ public class LevelManager : MonoBehaviour
 
     public static void StartGame()
     {
+        SceneManager.LoadScene(1);
+    }
+
+    public static void LevelFinished()
+    {
         SceneManager.LoadScene(0);
+        Debug.Log("Level finished");
     }
 }
