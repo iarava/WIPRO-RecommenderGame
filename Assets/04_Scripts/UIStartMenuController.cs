@@ -6,6 +6,6 @@ public class UIStartMenuController : MonoBehaviour
 {
     public void onStartPressed()
     {
-        LevelManager.StartGame();
+        LevelManager.Instance.StartGame();
     }
 }
