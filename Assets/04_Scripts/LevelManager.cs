@@ -51,7 +51,7 @@ public class LevelManager : MonoBehaviour
     public void LevelFinished()
     {
         level++;
-        if(level < 3)
+        if(level < levels.Length)
         {
             Debug.Log("Next Level");
             StartEinfuehrng();

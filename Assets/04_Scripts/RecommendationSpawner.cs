@@ -15,9 +15,9 @@ public class RecommendationSpawner : MonoBehaviour
 
     private bool firstSpawn = true;
 
-    private void Start()
+    private void Awake()
     {
-        customers = GameObject.FindObjectsOfType<Customer>();
+        customers = FindObjectsOfType<Customer>();
         if (customers.Length == 0)
         {
             Debug.LogError("No Customer is referenced.");
