@@ -10,36 +10,50 @@ public class LevelManager : MonoBehaviour
 
     public static int level { get; private set; }
 
-    public event Action newLevel = delegate { };
+    public event Action newLevelLoaded = delegate { };
 
     [SerializeField]
     private LevelDefinition[] levels = null;
+
+    private void Awake()
+    {
+        Instance = this;
+
+        SceneManager.sceneLoaded += HandleSceneLoaded;
+    }
 
     public float GetCurrentLevelTime()
     {
         return levels[level].LevelTime;
     }
 
-    private void Awake()
+    public string GetCurrentLevelName()
     {
-        Instance = this;
+        return levels[level].LevelName;
     }
 
     public void StartGame()
     {
         level = 0;
-        StartEinfuehrng();
+        StartEinfuehrung();
     }
 
-    private void StartEinfuehrng()
+    private void StartEinfuehrung()
     {
         SceneManager.LoadScene(1);
     }
 
     public void EinfuehrungFinished()
     {
-        newLevel();
         SceneManager.LoadScene(2);
+        newLevelLoaded();
+        Debug.Log("New Level");
+    }
+
+    private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.buildIndex == 2)
+            newLevelLoaded();
     }
 
     public void LevelTimeElapsed()
@@ -54,7 +68,7 @@ public class LevelManager : MonoBehaviour
         if(level < levels.Length)
         {
             Debug.Log("Next Level");
-            StartEinfuehrng();
+            StartEinfuehrung();
         }
         else
         {

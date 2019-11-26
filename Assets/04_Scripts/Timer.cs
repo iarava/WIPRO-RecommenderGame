@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
 
     private void Awake()
     {
-        LevelManager.Instance.newLevel += initializeTimer;
+        LevelManager.Instance.newLevelLoaded += initializeTimer;
     }
 
     private void initializeTimer()
@@ -43,6 +43,6 @@ public class Timer : MonoBehaviour
        
     private void onDestroy()
     {
-        LevelManager.Instance.newLevel -= initializeTimer;
+        LevelManager.Instance.newLevelLoaded -= initializeTimer;
     }
 }
