@@ -52,7 +52,16 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void EinfuehrungFinished()
+    public void LoadNextScene()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.buildIndex == 1)
+            EinfuehrungFinished();
+        else
+            LevelFinished();
+    }
+
+    private void EinfuehrungFinished()
     {
         SceneManager.LoadScene(2);
     }
@@ -72,7 +81,7 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Level finished");
     }
 
-    public void LevelFinished()
+    private void LevelFinished()
     {
         level++;
         if(level < levels.Length)
