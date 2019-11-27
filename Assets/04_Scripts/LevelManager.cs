@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
 
-    public static int level { get; private set; }
+    private int level = 0;
 
     public event Action newLevelLoaded = delegate { };
 
@@ -46,14 +46,15 @@ public class LevelManager : MonoBehaviour
     public void EinfuehrungFinished()
     {
         SceneManager.LoadScene(2);
-        newLevelLoaded();
-        Debug.Log("New Level");
     }
 
     private void HandleSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.buildIndex == 2)
+        {
             newLevelLoaded();
+            Debug.Log("New Level");
+        }            
     }
 
     public void LevelTimeElapsed()
