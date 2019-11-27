@@ -1,4 +1,5 @@
 ﻿using Cinemachine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,14 +11,25 @@ public class RecommendationCam : MonoBehaviour
 
     private bool test = false;
 
-    private void Update()
+    private void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            test = !test;
+        RecommendationManager.Instance.NewRecommendationLoaded += HandleRecommendationLoaded;
+        RecommendationManager.Instance.RecommendationFinished += HandleRecommendationFinished;
+    }
 
-        if (test)
-            Vcam.Priority = 2;
-        else
-            Vcam.Priority = 0;
+    private void HandleRecommendationLoaded(Customer customer)
+    {
+        Vcam.Priority = 2;
+    }
+
+    private void HandleRecommendationFinished(Customer customer)
+    {
+        Vcam.Priority = 0;
+    }
+    
+    private void OnDestroy()
+    {
+        RecommendationManager.Instance.NewRecommendationLoaded -= HandleRecommendationLoaded;
+        RecommendationManager.Instance.RecommendationFinished -= HandleRecommendationFinished;
     }
 }

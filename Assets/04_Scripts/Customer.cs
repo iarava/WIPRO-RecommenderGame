@@ -12,9 +12,12 @@ public class Customer : MonoBehaviour
     private GameObject question = null;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         status = Status.Idle;
+
+        RecommendationManager.Instance.NewRecommendationLoaded += HandleRecommendationLoaded;
+        RecommendationManager.Instance.RecommendationFinished += HandleRecommendationFinished;
     }
 
     public void setSign()
@@ -23,16 +26,28 @@ public class Customer : MonoBehaviour
         reWanted.SetActive(true);
     }
 
-    public void loadRecommendation()
+    private void HandleRecommendationLoaded(Customer customer)
     {
-        status = Status.Running;
-        reWanted.SetActive(false);
-        question.SetActive(true);
+        if (customer.Equals(this))
+        {
+            status = Status.Running;
+            reWanted.SetActive(false);
+            question.SetActive(true);
+        }
     }
 
-    public void leavePlayer()
+    private void HandleRecommendationFinished(Customer customer)
     {
-        status = Status.Idle;
-        question.SetActive(false);
+        if (customer.Equals(this))
+        {
+            status = Status.Idle;
+            question.SetActive(false);
+        }        
+    }
+
+    private void OnDestroy()
+    {
+        RecommendationManager.Instance.NewRecommendationLoaded -= HandleRecommendationLoaded;
+        RecommendationManager.Instance.RecommendationFinished -= HandleRecommendationFinished;
     }
 }

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bcbd2782a2800544bcd8745b4d8ea2c, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: 
-  levelTime: 10
+  levelTime: 20
   levelName: Content-based

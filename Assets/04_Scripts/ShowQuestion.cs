@@ -10,7 +10,7 @@ public class ShowQuestion : MonoBehaviour
         if(customer.status == Status.Waiting)
         {
             Debug.Log("Show Question");
-            customer.loadRecommendation();
+            RecommendationManager.Instance.RequestRecommendation(customer);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -19,7 +19,7 @@ public class ShowQuestion : MonoBehaviour
         if (customer.status == Status.Running)
         {
             Debug.Log("Question Anwserd");
-            customer.leavePlayer();
+            RecommendationManager.Instance.finishRecommendation();
         }
     }
 }

@@ -8,16 +8,19 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
 
-    private int level = 0;
-
-    public event Action newLevelLoaded = delegate { };
-
     [SerializeField]
     private LevelDefinition[] levels = null;
 
+    public int level = 0;
+
+    public event Action newLevelLoaded = delegate { };
+
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+            Instance = this;
+        else if (Instance != this)
+            Destroy(gameObject);
 
         SceneManager.sceneLoaded += HandleSceneLoaded;
     }
@@ -30,6 +33,12 @@ public class LevelManager : MonoBehaviour
     public string GetCurrentLevelName()
     {
         return levels[level].LevelName;
+    }
+
+    public int GetCurrenLevelPool()
+    {
+        //ToDo Implementation needed according DataStructur
+        return 0;
     }
 
     public void StartGame()
