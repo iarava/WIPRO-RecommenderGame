@@ -11,7 +11,7 @@ public class UI_StoryController : MonoBehaviour
 
     private void Awake()
     {
-        StoryManager.Instance.DisplayDialogue += DisplaySentence;
+        StoryManager.Instance.DisplayDialogue += handleDisplaySentence;
     }
 
     public void onNextSentence()
@@ -19,13 +19,13 @@ public class UI_StoryController : MonoBehaviour
         StoryManager.Instance.DisplayNextSentence();
     }
 
-    private void DisplaySentence(string sentence)
+    private void handleDisplaySentence(string sentence)
     {
         textSentence.text = sentence;
     }
 
     private void onDestroy()
     {
-        StoryManager.Instance.DisplayDialogue -= DisplaySentence;
+        StoryManager.Instance.DisplayDialogue -= handleDisplaySentence;
     }
 }
