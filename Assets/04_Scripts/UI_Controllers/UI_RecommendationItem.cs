@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DraggableItem : MonoBehaviour, IDragHandler, IDropHandler, IBeginDragHandler, IEndDragHandler
+public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, IBeginDragHandler, IEndDragHandler
 {
     private RecommenderItem[] canvas;
 
@@ -14,6 +14,10 @@ public class DraggableItem : MonoBehaviour, IDragHandler, IDropHandler, IBeginDr
     private float horizontalLength = 200f;
     [SerializeField]
     private float verticalLength = 200f;
+
+    private bool isCorrectItem = false;
+
+    public bool IsCorrectItem { get; set; }
 
 
     private void Awake()
