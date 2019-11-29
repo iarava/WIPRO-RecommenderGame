@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d402830715d374db6535942684433f, type: 3}
+  m_Name: AssociationPool
+  m_EditorClassIdentifier: 
+  recommendationPools:
+  - RecommendationCataloge:
+    - {fileID: 11400000, guid: d3e7194acf03c394ca078db798ce9250, type: 2}
+    - {fileID: 11400000, guid: 88d882996720ddf48ad57e7cd04a30dc, type: 2}
+    - {fileID: 11400000, guid: 876d71bd7a78a6642a6ab0607978bc93, type: 2}
+    Score: 100
+  - RecommendationCataloge:
+    - {fileID: 11400000, guid: 20756f724f3c3ce4d960e2f81703807a, type: 2}
+    - {fileID: 11400000, guid: 9da9706f200cdc345b3cd5ada80b913a, type: 2}
+    - {fileID: 11400000, guid: 09b5340f696cbd245aa0fea7f58fd697, type: 2}
+    Score: 200

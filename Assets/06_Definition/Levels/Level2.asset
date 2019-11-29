@@ -15,3 +15,4 @@ MonoBehaviour:
   levelTime: 20
   levelName: Content-based
   storySequence: {fileID: 11400000, guid: 43ab701078981e3439f7062039b83cad, type: 2}
+  recommendationPool: {fileID: 11400000, guid: c1cd3de8df6ec6e4fad6ae4034f14568, type: 2}

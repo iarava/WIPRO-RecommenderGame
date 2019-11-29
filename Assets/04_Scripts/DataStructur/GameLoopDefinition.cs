@@ -19,7 +19,7 @@ public class GameLoopDefinition : ScriptableObject
 
     public void NextLevel()
     {
-        //GetLevelDefinition().RecommendationPool.resetPool();
+        GetLevelDefinition().RecommendationPool.resetPool();
         currentLevel++;
         setTutorialState(true);
     }

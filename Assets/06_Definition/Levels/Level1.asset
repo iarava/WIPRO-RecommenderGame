@@ -15,3 +15,4 @@ MonoBehaviour:
   levelTime: 10
   levelName: Association
   storySequence: {fileID: 11400000, guid: 0282b7cd0e5140a4e87d043131c1e05b, type: 2}
+  recommendationPool: {fileID: 11400000, guid: 95d7311fae036124ebc3eff1fccdf067, type: 2}

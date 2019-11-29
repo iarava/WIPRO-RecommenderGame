@@ -15,3 +15,4 @@ MonoBehaviour:
   levelTime: 30
   levelName: Collaborativ
   storySequence: {fileID: 11400000, guid: 01e56d2729e1b814dbf046110985b392, type: 2}
+  recommendationPool: {fileID: 11400000, guid: 52f3a421a53d2624ebe2d904880ee77e, type: 2}
