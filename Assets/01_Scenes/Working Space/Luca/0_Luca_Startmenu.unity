@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a2cbb55fcaa36544b1b8eedfd23fd08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameLoop: {fileID: 11400000, guid: 5928e5bfb667af84683bbc1001421cde, type: 2}
 --- !u!4 &461671492
 Transform:
   m_ObjectHideFlags: 0
@@ -624,11 +625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ce28bbb86396741be71e38e88bec6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels:
-  - {fileID: 11400000, guid: 6ad26c93669300041901c6de8f6965bd, type: 2}
-  - {fileID: 11400000, guid: 77d56a572c1c46242965fb80252bce18, type: 2}
-  - {fileID: 11400000, guid: a1d6cf1214369334e83c51d35e0d991c, type: 2}
-  level: 0
+  gameLoop: {fileID: 11400000, guid: 5928e5bfb667af84683bbc1001421cde, type: 2}
 --- !u!114 &2032257079
 MonoBehaviour:
   m_ObjectHideFlags: 0

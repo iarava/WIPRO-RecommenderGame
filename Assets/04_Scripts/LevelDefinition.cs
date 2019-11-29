@@ -9,6 +9,9 @@ public class LevelDefinition : ScriptableObject
     private float levelTime = 180.0f;
     [SerializeField]
     private string levelName;
+    [SerializeField]
+    private StoryDefinition storySequence;
+
 
     public float LevelTime
     {
@@ -23,6 +26,14 @@ public class LevelDefinition : ScriptableObject
         get
         {
             return levelName;
+        }
+    }
+
+    public StoryDefinition StorySequence
+    {
+        get
+        {
+            return storySequence;
         }
     }
 }

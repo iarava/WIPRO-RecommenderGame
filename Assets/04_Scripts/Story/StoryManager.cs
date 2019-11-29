@@ -10,9 +10,15 @@ public class StoryManager : MonoBehaviour
     private Queue<string> sentences;
 
     private Dialogue currentDialogue;
+    private bool isIntro;
+
+    [SerializeField]
+    private GameLoopDefinition gameLoop;
+
+    private StoryDefinition storySequence;
 
     public event Action<string> DisplayDialogue = delegate { };
-    public event Action DisplayTutorial = delegate { };
+    public event Action<Tutorial> DisplayTutorial = delegate { };
 
     // Start is called before the first frame update
     private void Awake()
@@ -27,7 +33,8 @@ public class StoryManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        currentDialogue = dialogue;
+        storySequence = gameLoop.GetLevelDefinition().StorySequence;
+        currentDialogue = storySequence.getDialogue(gameLoop.GetIsIntro());
         sentences.Clear();
 
         foreach(string sentence in currentDialogue.sentences)
@@ -51,15 +58,18 @@ public class StoryManager : MonoBehaviour
 
     void EndDialogue()
     {
-        if (currentDialogue.hasTutorial)
+        bool isIntro = gameLoop.GetIsIntro();
+        if (isIntro)
             showTutorial();
         else
             EndStorySequence();
+
+        gameLoop.setTutorialState(!isIntro);
     }
 
     private void showTutorial()
     {
-        DisplayTutorial();
+        DisplayTutorial(storySequence.Tutorial);
         Debug.Log("Display Tutorial");
     }
 
