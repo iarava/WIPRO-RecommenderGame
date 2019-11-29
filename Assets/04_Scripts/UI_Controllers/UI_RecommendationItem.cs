@@ -17,13 +17,14 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
 
     private bool isCorrectItem = false;
 
+    private RecommendationManager recommendationManager;
+    
     public bool IsCorrectItem { get; set; }
-
 
     private void Awake()
     {
         canvas = GetComponents<RecommenderItem>();
-
+        recommendationManager = RecommendationManager.Instance;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -48,11 +49,13 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
         if (isInRecommendationField(eventData.position))
         {
             Debug.Log("Item placed, Grid still disabled");
+            recommendationManager.checkRecommendation(true);
         }
         else
         {
             Debug.Log("Not in the correct postion, Grid Layout enabled again");
             grid.enabled = true;
+            recommendationManager.checkRecommendation(false);
         }
         Debug.Log(eventData.position.ToString());
         //canvas = Color.white;
