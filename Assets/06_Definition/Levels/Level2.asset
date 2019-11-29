@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelTime: 20
   levelName: Content-based
+  storySequence: {fileID: 11400000, guid: 43ab701078981e3439f7062039b83cad, type: 2}

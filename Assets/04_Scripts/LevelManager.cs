@@ -8,10 +8,14 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
 
-    [SerializeField]
+    /*[SerializeField]
     private LevelDefinition[] levels = null;
 
     public int level = 0;
+    */
+
+    [SerializeField]
+    private GameLoopDefinition gameLoop = null;
 
     public event Action newLevelLoaded = delegate { };
 
@@ -27,12 +31,12 @@ public class LevelManager : MonoBehaviour
 
     public float GetCurrentLevelTime()
     {
-        return levels[level].LevelTime;
+        return gameLoop.GetLevelDefinition().LevelTime;
     }
 
     public string GetCurrentLevelName()
     {
-        return levels[level].LevelName;
+        return gameLoop.GetLevelDefinition().LevelName;
     }
 
     public int GetCurrenLevelPool()
@@ -43,7 +47,7 @@ public class LevelManager : MonoBehaviour
 
     public void StartGame()
     {
-        level = 0;
+        gameLoop.resetGameLoop();
         StartEinfuehrung();
     }
 
@@ -83,8 +87,8 @@ public class LevelManager : MonoBehaviour
 
     private void LevelFinished()
     {
-        level++;
-        if(level < levels.Length)
+        gameLoop.NextLevel();
+        if (gameLoop.LevelCountReached())
         {
             Debug.Log("Next Level");
             StartEinfuehrung();

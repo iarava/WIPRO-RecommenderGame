@@ -17,7 +17,7 @@ public class ChangeElements : MonoBehaviour
         SetStoryElements(true);
     }
 
-    private void handleDisplayTutorial()
+    private void handleDisplayTutorial(Tutorial tutorial)
     {
         SetStoryElements(false);
     }

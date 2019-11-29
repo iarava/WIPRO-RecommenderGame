@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelTime: 30
   levelName: Collaborativ
+  storySequence: {fileID: 11400000, guid: 01e56d2729e1b814dbf046110985b392, type: 2}
