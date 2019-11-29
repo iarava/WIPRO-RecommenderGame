@@ -88,6 +88,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51567e7521c75594e9d0fa5aadd8f2ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  center: {x: 770, y: 510}
+  horizontalLength: 200
+  verticalLength: 200
 --- !u!223 &7959487777893144249
 Canvas:
   m_ObjectHideFlags: 0
@@ -118,9 +121,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568443451456032797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54adab7f0bcbe7f438877e4138ed0366, type: 3}
+  m_Script: {fileID: 11500000, guid: 36686e959ff1e864f8a78697fda622d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  center: {x: 770, y: 510}
+  horizontalLength: 200
+  verticalLength: 200
 --- !u!1 &2369224436013979505
 GameObject:
   m_ObjectHideFlags: 0
