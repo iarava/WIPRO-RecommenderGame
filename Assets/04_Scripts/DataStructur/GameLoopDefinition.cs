@@ -19,6 +19,7 @@ public class GameLoopDefinition : ScriptableObject
 
     public void NextLevel()
     {
+        //GetLevelDefinition().RecommendationPool.resetPool();
         currentLevel++;
         setTutorialState(true);
     }
@@ -36,11 +37,6 @@ public class GameLoopDefinition : ScriptableObject
     public LevelDefinition GetLevelDefinition()
     {
         return levels[currentLevel];
-    }
-
-    public int getCountLevels()
-    {
-        return levels.Length;
     }
 
     public bool LevelCountReached()

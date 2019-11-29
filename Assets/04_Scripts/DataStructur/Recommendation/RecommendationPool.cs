@@ -5,6 +5,12 @@ using UnityEngine;
 [System.Serializable]
 public class RecommendationPool
 {
-    public DataRecommendation Pool;
+    public DataRecommendation[] RecommendationCataloge;
     public int Score;
+
+    public DataRecommendation GetRecommendation()
+    {
+        int index = Random.Range(0, RecommendationCataloge.Length - 1);
+        return RecommendationCataloge[index];
+    }
 }

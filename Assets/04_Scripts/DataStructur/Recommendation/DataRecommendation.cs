@@ -8,9 +8,7 @@ public class DataRecommendation : ScriptableObject
     [SerializeField, TextArea(3, 20)]
     private string question;
     [SerializeField]
-    private DataRecommendationItem[] possibleSelections;
-    [SerializeField]
-    private int correctSelection;
+    private RecommendationItem[] possibleSelections;
     [SerializeField]
     private Sprite imageMethode;
     [SerializeField]
@@ -19,4 +17,52 @@ public class DataRecommendation : ScriptableObject
     private string textFeedback;
     [SerializeField]
     private string textCorrectAnswer;
+
+    public string Question
+    {
+        get
+        {
+            return question;
+        }
+    }
+
+    public RecommendationItem[] PossibleSelections
+    {
+        get
+        {
+            return possibleSelections;
+        }
+    }
+
+    public Sprite ImageMethode
+    {
+        get
+        {
+            return imageMethode;
+        }
+    }
+
+    public Sprite ImageFeedback
+    {
+        get
+        {
+            return imageFeedback;
+        }
+    }
+
+    public string TextFeedback
+    {
+        get
+        {
+            return textFeedback;
+        }
+    }
+
+    public string TextCorrectAnswer
+    {
+        get
+        {
+            return textCorrectAnswer;
+        }
+    }
 }

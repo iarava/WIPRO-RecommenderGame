@@ -11,6 +11,8 @@ public class LevelDefinition : ScriptableObject
     private string levelName;
     [SerializeField]
     private StoryDefinition storySequence;
+    [SerializeField]
+    private DataRecommendationPool recommendationPool;
 
 
     public float LevelTime
@@ -34,6 +36,14 @@ public class LevelDefinition : ScriptableObject
         get
         {
             return storySequence;
+        }
+    }
+
+    public DataRecommendationPool RecommendationPool
+    {
+        get
+        {
+            return recommendationPool;
         }
     }
 }
