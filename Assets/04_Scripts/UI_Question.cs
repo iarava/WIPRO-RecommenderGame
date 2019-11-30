@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Question : MonoBehaviour
+public class UI_Question : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

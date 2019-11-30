@@ -15,7 +15,7 @@ public class RecommendationManager : MonoBehaviour
     private Customer currentCustomer;
 
     public event Action<Customer, DataRecommendation> NewRecommendationLoaded = delegate { };
-    public event Action ShowFeedback = delegate { };
+    public event Action<DataRecommendation> ShowFeedback = delegate { };
     public event Action<Customer> RecommendationFinished = delegate { };
 
     private void Start()
@@ -47,7 +47,7 @@ public class RecommendationManager : MonoBehaviour
         if (correct)
             finishRecommendation();             //optional increas difficulty
         else
-            ShowFeedback();
+            ShowFeedback(new DataRecommendation()); // TODO: Set DataRecommendation
     }
 
     public void finishRecommendation()
