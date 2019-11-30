@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2750089498979938057}
   - component: {fileID: 2750089498979938059}
   - component: {fileID: 2750089498979938058}
+  - component: {fileID: 8083136309704397750}
   m_Layer: 0
   m_Name: UI_MethodeEmpfehlung
   m_TagString: Untagged
@@ -74,6 +75,18 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &8083136309704397750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750089498979938056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 553ffdf9af56f734e98f877887edc395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2750089499565072644
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class RecommendationManager : MonoBehaviour
 
     public event Action<bool> ShowRecommendation = delegate { };
     public event Action<Customer, DataRecommendation> NewRecommendationLoaded = delegate { };
+    public event Action BeforeShowFeedback = delegate { };
     public event Action<DataRecommendation> ShowFeedback = delegate { };
     public event Action<Customer> RecommendationFinished = delegate { };
 
@@ -42,7 +43,10 @@ public class RecommendationManager : MonoBehaviour
             finishRecommendation();
         }
         else
+        {
+            BeforeShowFeedback();
             ShowFeedback(recommendation); // TODO: Set DataRecommendation
+        }
     }
 
     private void UpdateStates()
