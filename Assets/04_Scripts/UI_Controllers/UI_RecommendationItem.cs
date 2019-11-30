@@ -35,7 +35,6 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
             grid.enabled = false;
             Debug.Log("Disabled Grid Layout");
         }
-        //canvas = Color.green;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -49,9 +48,7 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
         if (isInRecommendationField(eventData.position))
         {
             Debug.Log("Item placed, Grid still disabled");
-
-            //UI_RecommendationItem script = recommendationItems[i].GetComponent<UI_RecommendationItem>();
-            //recommendationManager.checkRecommendation(script);
+            recommendationManager.checkRecommendation(isCorrectItem);
         }
         else
         {
@@ -59,7 +56,6 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
             grid.enabled = true;
         }
         Debug.Log(eventData.position.ToString());
-        //canvas = Color.white;
     }
 
     public void OnDrop(PointerEventData eventData)
