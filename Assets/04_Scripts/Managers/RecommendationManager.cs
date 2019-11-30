@@ -13,6 +13,7 @@ public class RecommendationManager : MonoBehaviour
     private Customer currentCustomer;
     private DataRecommendation recommendation;
 
+    public event Action<bool> ShowRecommendation = delegate { };
     public event Action<Customer, DataRecommendation> NewRecommendationLoaded = delegate { };
     public event Action<DataRecommendation> ShowFeedback = delegate { };
     public event Action<Customer> RecommendationFinished = delegate { };
@@ -27,6 +28,7 @@ public class RecommendationManager : MonoBehaviour
 
     public void RequestRecommendation(Customer customer)
     {
+        ShowRecommendation(true);
         recommendation = gameLoop.GetLevelDefinition().RecommendationPool.GetRecommendationPool().GetRecommendation();
         currentCustomer = customer;
         NewRecommendationLoaded(customer, recommendation);
@@ -51,6 +53,7 @@ public class RecommendationManager : MonoBehaviour
 
     public void finishRecommendation()
     {
+        ShowRecommendation(false);
         RecommendationFinished(currentCustomer);
     }
 }
