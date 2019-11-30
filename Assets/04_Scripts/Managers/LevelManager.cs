@@ -39,10 +39,9 @@ public class LevelManager : MonoBehaviour
         return gameLoop.GetLevelDefinition().LevelName;
     }
 
-    public int GetCurrenLevelPool()
+    public int GetScore()
     {
-        //ToDo Implementation needed according DataStructur
-        return 0;
+        return gameLoop.GetScore();
     }
 
     public void StartGame()
