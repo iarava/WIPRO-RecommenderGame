@@ -6,18 +6,19 @@ using UnityEngine.UI;
 
 public class UI_RecommendationItemController : MonoBehaviour
 {
-    private RecommenderItem[] recommendationItems;
-
-    private void Awake()
+    private UI_RecommendationItem[] recommendationItems;
+    
+    private void OnEnable()
     {
         // Init Recommendation Items
-        recommendationItems = GetComponentsInChildren<RecommenderItem>();
+        recommendationItems = GetComponentsInChildren<UI_RecommendationItem>();
         RecommendationManager.Instance.NewRecommendationLoaded += newRecommendationOpened;
     }
 
     private void newRecommendationOpened(Customer customer, DataRecommendation dataItems)
     {
         setRecommendationItems(dataItems.PossibleSelections);
+        Debug.Log(dataItems.name);
     }
 
     public void setRecommendationItems(RecommendationItem[] dataItems)
@@ -29,19 +30,20 @@ public class UI_RecommendationItemController : MonoBehaviour
 
         for(int i = 0; i < dataItems.Length; i++)
         {
-            Image image = recommendationItems[i].GetComponent<Image>();
+            Image image = recommendationItems[i].GetComponentInChildren<ImageItem>().gameObject.GetComponent<Image>();
             image.sprite = dataItems[i].RecommendationObject.ImageItem;
 
-            Text text = recommendationItems[i].GetComponent<Text>();
+            Text text = recommendationItems[i].GetComponentInChildren<TextItem>().gameObject.GetComponent<Text>();
             text.text = dataItems[i].RecommendationObject.NameItem;
 
-            UI_RecommendationItem script = recommendationItems[i].GetComponent<UI_RecommendationItem>();
-            script.IsCorrectItem = dataItems[i].correctAnswer;
+            recommendationItems[i].IsCorrectItem = dataItems[i].correctAnswer;
             
         }
         
     }
 
-
-
+    private void OnDisable()
+    {
+        RecommendationManager.Instance.NewRecommendationLoaded -= newRecommendationOpened;
+    }
 }
