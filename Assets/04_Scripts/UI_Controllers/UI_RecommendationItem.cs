@@ -15,8 +15,6 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
     [SerializeField]
     private float verticalLength = 200f;
 
-    private bool isCorrectItem = false;
-
     private RecommendationManager recommendationManager;
     
     public bool IsCorrectItem { get; set; }
@@ -48,7 +46,7 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
         if (isInRecommendationField(eventData.position))
         {
             Debug.Log("Item placed, Grid still disabled");
-            recommendationManager.checkRecommendation(isCorrectItem);
+            RecommendationManager.Instance.checkRecommendation(IsCorrectItem);
         }
         else
         {
