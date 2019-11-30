@@ -8,12 +8,16 @@ using UnityEngine.UI;
 public class UI_RecommendationItemController : MonoBehaviour
 {
     private UI_RecommendationItem[] recommendationItems;
-    
+    GetComponent<GridLayoutGroup> grid;
+
+
     private void OnEnable()
     {
         // Init Recommendation Items
         recommendationItems = GetComponentsInChildren<UI_RecommendationItem>();
         RecommendationManager.Instance.NewRecommendationLoaded += newRecommendationOpened;
+
+        grid = GetComponent<GridLayoutGroup>();
     }
 
     private void newRecommendationOpened(Customer customer, DataRecommendation dataItems)
@@ -28,6 +32,8 @@ public class UI_RecommendationItemController : MonoBehaviour
         {
             Debug.LogError("Given dataItemsList does not match the size of the recommendationItemsList");
         }
+
+        grid.enabled = true;
 
         for(int i = 0; i < dataItems.Length; i++)
         {
