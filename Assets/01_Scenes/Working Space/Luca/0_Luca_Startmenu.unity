@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f220beb061a524ea53f69e135800c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameLoop: {fileID: 11400000, guid: 5928e5bfb667af84683bbc1001421cde, type: 2}
 --- !u!4 &670754991
 Transform:
   m_ObjectHideFlags: 0

@@ -10,11 +10,13 @@ public class GameLoopDefinition : ScriptableObject
 
     private int currentLevel;
     private bool isIntro;
+    private int score;
 
     public void resetGameLoop()
     {
         currentLevel = 0;
         isIntro = true;
+        score = 0;
     }
 
     public void NextLevel()
@@ -42,5 +44,15 @@ public class GameLoopDefinition : ScriptableObject
     public bool LevelCountReached()
     {
         return (currentLevel < levels.Length);
+    }
+
+    public void AddScore()
+    {
+        score += GetLevelDefinition().RecommendationPool.GetRecommendationPool().ScoreAmount;
+    }
+
+    public int GetScore()
+    {
+        return score;
     }
 }

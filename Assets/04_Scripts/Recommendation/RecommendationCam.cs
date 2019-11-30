@@ -9,8 +9,6 @@ public class RecommendationCam : MonoBehaviour
     [SerializeField]
     private CinemachineVirtualCamera Vcam;
 
-    private bool test = false;
-
     private void Awake()
     {
         RecommendationManager.Instance.NewRecommendationLoaded += HandleRecommendationLoaded;

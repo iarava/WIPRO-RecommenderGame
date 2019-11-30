@@ -6,7 +6,7 @@ using UnityEngine;
 public class RecommendationPool
 {
     public DataRecommendation[] RecommendationCataloge;
-    public int Score;
+    public int ScoreAmount;
 
     public DataRecommendation GetRecommendation()
     {

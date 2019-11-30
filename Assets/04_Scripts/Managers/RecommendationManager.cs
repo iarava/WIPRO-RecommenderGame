@@ -7,12 +7,11 @@ public class RecommendationManager : MonoBehaviour
 {
     public static RecommendationManager Instance { get; private set; }
 
-    private int levelPool = 0; //ToDo: which Pool is requested (Association, Content-based, Collaborativ)
-
-    private int countRecommendations;  //ToDo: is the counter for which Recommendation in Pool
-    private int difficulty;  //ToDo: which difficulty of the Pool is requested (optional)
+    [SerializeField]
+    private GameLoopDefinition gameLoop = null;
 
     private Customer currentCustomer;
+    private DataRecommendation recommendation;
 
     public event Action<Customer, DataRecommendation> NewRecommendationLoaded = delegate { };
     public event Action<DataRecommendation> ShowFeedback = delegate { };
@@ -24,40 +23,34 @@ public class RecommendationManager : MonoBehaviour
             Instance = this;
         else if (Instance != this)
             Destroy(gameObject);
-
-        LevelManager.Instance.newLevelLoaded += handleNewLoadedLevel;
-    }
-
-    private void handleNewLoadedLevel()
-    {
-        levelPool = LevelManager.Instance.GetCurrenLevelPool();
-
-        countRecommendations = 0;
-        difficulty = 0;
     }
 
     public void RequestRecommendation(Customer customer)
     {
+        recommendation = gameLoop.GetLevelDefinition().RecommendationPool.GetRecommendationPool().GetRecommendation();
         currentCustomer = customer;
-        NewRecommendationLoaded(customer, new DataRecommendation());
+        NewRecommendationLoaded(customer, recommendation);
     }
 
     public void checkRecommendation(bool correct)
     {
         if (correct)
-            finishRecommendation();             //optional increas difficulty
+        {
+            UpdateStates();
+            finishRecommendation();
+        }
         else
-            ShowFeedback(new DataRecommendation()); // TODO: Set DataRecommendation
+            ShowFeedback(recommendation); // TODO: Set DataRecommendation
+    }
+
+    private void UpdateStates()
+    {
+        gameLoop.AddScore();
+        gameLoop.GetLevelDefinition().RecommendationPool.nextDifficulty();
     }
 
     public void finishRecommendation()
     {
-        //countRecommendations++;               //next Recommendation (check for max. Recommendations)
         RecommendationFinished(currentCustomer);
-    }
-
-    private void OnDestroy()
-    {
-        LevelManager.Instance.newLevelLoaded -= handleNewLoadedLevel;
     }
 }
