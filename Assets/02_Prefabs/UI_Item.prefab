@@ -89,8 +89,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 770, y: 510}
-  horizontalLength: 200
-  verticalLength: 200
+  horizontalLength: 250
+  verticalLength: 250
 --- !u!223 &7959487777893144249
 Canvas:
   m_ObjectHideFlags: 0

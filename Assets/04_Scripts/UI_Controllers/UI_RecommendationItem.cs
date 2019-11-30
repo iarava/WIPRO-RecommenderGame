@@ -49,13 +49,14 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
         if (isInRecommendationField(eventData.position))
         {
             Debug.Log("Item placed, Grid still disabled");
-            recommendationManager.checkRecommendation(true);
+
+            UI_RecommendationItem script = recommendationItems[i].GetComponent<UI_RecommendationItem>();
+            recommendationManager.checkRecommendation(script);
         }
         else
         {
             Debug.Log("Not in the correct postion, Grid Layout enabled again");
             grid.enabled = true;
-            recommendationManager.checkRecommendation(false);
         }
         Debug.Log(eventData.position.ToString());
         //canvas = Color.white;

@@ -14,7 +14,7 @@ public class RecommendationManager : MonoBehaviour
 
     private Customer currentCustomer;
 
-    public event Action<Customer> NewRecommendationLoaded = delegate { };
+    public event Action<Customer, DataItem[]> NewRecommendationLoaded = delegate { };
     public event Action ShowFeedback = delegate { };
     public event Action<Customer> RecommendationFinished = delegate { };
 

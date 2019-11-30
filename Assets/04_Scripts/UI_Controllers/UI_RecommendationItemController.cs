@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,9 +12,15 @@ public class UI_RecommendationItemController : MonoBehaviour
     {
         // Init Recommendation Items
         recommendationItems = GetComponentsInChildren<RecommenderItem>();
+        RecommendationManager.Instance.NewRecommendationLoaded += newRecommendationOpened;
     }
 
-    public void setRecommendationItems(DataItem[] dataItems)
+    private void newRecommendationOpened(Customer customer, DataRecommendation dataItems)
+    {
+        setRecommendationItems(dataItems.PossibleSelections);
+    }
+
+    public void setRecommendationItems(RecommendationItem[] dataItems)
     {
         if(dataItems.Length != recommendationItems.Length)
         {
@@ -23,13 +30,13 @@ public class UI_RecommendationItemController : MonoBehaviour
         for(int i = 0; i < dataItems.Length; i++)
         {
             Image image = recommendationItems[i].GetComponent<Image>();
-            image.sprite = dataItems[i].ImageItem;
+            image.sprite = dataItems[i].RecommendationObject.ImageItem;
 
             Text text = recommendationItems[i].GetComponent<Text>();
-            text.text = dataItems[i].NameItem;
+            text.text = dataItems[i].RecommendationObject.NameItem;
 
             UI_RecommendationItem script = recommendationItems[i].GetComponent<UI_RecommendationItem>();
-            script.IsCorrectItem = false; // Where do I get the value from?
+            script.IsCorrectItem = dataItems[i].correctAnswer;
             
         }
         
