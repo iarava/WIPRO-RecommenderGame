@@ -50,8 +50,8 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
         {
             Debug.Log("Item placed, Grid still disabled");
 
-            UI_RecommendationItem script = recommendationItems[i].GetComponent<UI_RecommendationItem>();
-            recommendationManager.checkRecommendation(script);
+            //UI_RecommendationItem script = recommendationItems[i].GetComponent<UI_RecommendationItem>();
+            //recommendationManager.checkRecommendation(script);
         }
         else
         {

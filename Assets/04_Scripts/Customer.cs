@@ -26,7 +26,7 @@ public class Customer : MonoBehaviour
         reWanted.SetActive(true);
     }
 
-    private void HandleRecommendationLoaded(Customer customer)
+    private void HandleRecommendationLoaded(Customer customer, DataRecommendation recommendation)
     {
         if (customer.Equals(this))
         {

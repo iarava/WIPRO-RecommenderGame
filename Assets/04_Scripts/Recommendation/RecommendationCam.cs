@@ -17,7 +17,7 @@ public class RecommendationCam : MonoBehaviour
         RecommendationManager.Instance.RecommendationFinished += HandleRecommendationFinished;
     }
 
-    private void HandleRecommendationLoaded(Customer customer)
+    private void HandleRecommendationLoaded(Customer customer, DataRecommendation recommendation)
     {
         Vcam.Priority = 2;
     }

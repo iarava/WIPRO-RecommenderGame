@@ -14,7 +14,7 @@ public class RecommendationManager : MonoBehaviour
 
     private Customer currentCustomer;
 
-    public event Action<Customer, DataItem[]> NewRecommendationLoaded = delegate { };
+    public event Action<Customer, DataRecommendation> NewRecommendationLoaded = delegate { };
     public event Action ShowFeedback = delegate { };
     public event Action<Customer> RecommendationFinished = delegate { };
 
@@ -39,7 +39,7 @@ public class RecommendationManager : MonoBehaviour
     public void RequestRecommendation(Customer customer)
     {
         currentCustomer = customer;
-        NewRecommendationLoaded(customer);
+        NewRecommendationLoaded(customer, new DataRecommendation());
     }
 
     public void checkRecommendation(bool correct)
