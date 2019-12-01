@@ -25,6 +25,7 @@ public class showRecommendation : MonoBehaviour
 
         if (active)
         {
+            methodeController.gameObject.SetActive(true);
             recommendationFeedback.gameObject.SetActive(false);
         }
     }

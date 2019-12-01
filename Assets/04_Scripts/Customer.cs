@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Customer : MonoBehaviour
@@ -33,6 +34,7 @@ public class Customer : MonoBehaviour
             status = Status.Running;
             reWanted.SetActive(false);
             question.SetActive(true);
+            question.GetComponentInChildren<UI_QuestionSpeechText>().gameObject.GetComponent<TextMeshProUGUI>().text = recommendation.Question; // setQuestionText(recommendation.Question);
         }
     }
 

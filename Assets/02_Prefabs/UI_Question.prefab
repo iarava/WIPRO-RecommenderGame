@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3500667272084701547}
   - component: {fileID: 7424466971470064091}
   - component: {fileID: 6334306012341604559}
+  - component: {fileID: 5997769710662798670}
   m_Layer: 5
   m_Name: Text Question
   m_TagString: Untagged
@@ -157,6 +158,18 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5997769710662798670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489097326826722361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8cc102193ae82418c2955188b47e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1472337310783314436
 GameObject:
   m_ObjectHideFlags: 0

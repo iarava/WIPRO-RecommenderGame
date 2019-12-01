@@ -13,18 +13,18 @@ public class UI_Question : MonoBehaviour
 
     private void newRecommendationLoaded(Customer customer, DataRecommendation recommendation)
     {
-        GetComponentInChildren<UI_QuestionSpeechText>().gameObject.GetComponent<Text>().text = recommendation.Question;
-    }
-
-    private void showFeedback(DataRecommendation recommendation)
-    {
-        GetComponentInChildren<ImageCorrectRecommendation>().gameObject.GetComponent<Image>().sprite = recommendation.ImageFeedback;
-        GetComponentInChildren<FeedbackCorrectAnswer>().gameObject.GetComponent<Text>().text = recommendation.TextFeedback;
+        GetComponentInChildren<UI_QuestionSpeechText>().gameObject.GetComponent<TextMesh>().text = recommendation.Question;
     }
 
 
     private void OnDisable()
     {
         RecommendationManager.Instance.NewRecommendationLoaded -= newRecommendationLoaded;
+    }
+
+    public void setQuestionText(string question)
+    {
+        //UI_QuestionSpeechText obj = GetComponentInChildren<UI_QuestionSpeechText>();
+        //obj.gameObject.GetComponent<TextMesh>().text = question;
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UI_MethodeController : MonoBehaviour
 {
-    public void Awake()
+    public void OnEnable()
     {
         RecommendationManager.Instance.NewRecommendationLoaded += handlerRecommendationLoaded;
     }
@@ -17,7 +17,7 @@ public class UI_MethodeController : MonoBehaviour
         GetComponentInChildren<Image>().sprite = recommendation.ImageMethode;
     }
 
-    public void OnDestroy()
+    public void OnDisable()
     {
         RecommendationManager.Instance.NewRecommendationLoaded -= handlerRecommendationLoaded;
     }
