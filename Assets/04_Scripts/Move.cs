@@ -14,6 +14,8 @@ public class Move : MonoBehaviour
     private bool isMoveUp;
     private bool isMoveDown;
 
+    private float currentSpeed;
+
     private Rigidbody2D rb;
 
     void Start()
@@ -24,13 +26,16 @@ public class Move : MonoBehaviour
         moveController.MoveUp += OnMoveUp;
         moveController.MoveDown += OnMoveDown;
 
+        RecommendationManager.Instance.ShowRecommendation += HandleShowRecommendation;
+
+        currentSpeed = speed;
         rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnMoveLeft()
     {
-        if(rb.position.x > -6.0f)
-            isMoveLeft = true;    
+        if (rb.position.x > -6.0f)
+            isMoveLeft = true;
     }
 
     private void OnMoveRight()
@@ -51,6 +56,14 @@ public class Move : MonoBehaviour
             isMoveDown = true;
     }
 
+    private void HandleShowRecommendation(bool activeRecommendation)
+    {
+        if (activeRecommendation)
+            speed = 0f;
+        else
+            speed = currentSpeed;
+    }
+
     private void FixedUpdate()
     {
         Vector3 pos = Vector3.zero;
@@ -67,7 +80,7 @@ public class Move : MonoBehaviour
         if (isMoveDown)
             pos += Vector3.down * Time.fixedDeltaTime * speed;
 
-        if(isMoveLeft || isMoveRight || isMoveUp || isMoveDown)
+        if (isMoveLeft || isMoveRight || isMoveUp || isMoveDown)
         {
             rb.MovePosition(transform.position + pos);
             isMoveLeft = false;
@@ -84,5 +97,7 @@ public class Move : MonoBehaviour
         moveController.MoveRight -= OnMoveRight;
         moveController.MoveUp -= OnMoveLeft;
         moveController.MoveDown -= OnMoveRight;
+
+        RecommendationManager.Instance.ShowRecommendation -= HandleShowRecommendation;
     }
 }
