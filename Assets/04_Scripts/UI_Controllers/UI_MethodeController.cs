@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class UI_MethodeController : MonoBehaviour
 {
+    [SerializeField]
+    Image methodImage;
+
     public void OnEnable()
     {
         RecommendationManager.Instance.NewRecommendationLoaded += handlerRecommendationLoaded;
@@ -13,8 +16,8 @@ public class UI_MethodeController : MonoBehaviour
 
     private void handlerRecommendationLoaded(Customer customer, DataRecommendation recommendation)
     {
-        //GetComponentInChildren<Text>().text = recommendation;
-        GetComponentInChildren<Image>().sprite = recommendation.ImageMethode;
+        GetComponentInChildren<Text>().text = recommendation.name;
+        methodImage.sprite = recommendation.ImageMethode;
     }
 
     public void OnDisable()
