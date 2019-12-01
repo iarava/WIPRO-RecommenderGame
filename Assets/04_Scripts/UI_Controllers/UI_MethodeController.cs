@@ -16,7 +16,6 @@ public class UI_MethodeController : MonoBehaviour
 
     private void handlerRecommendationLoaded(Customer customer, DataRecommendation recommendation)
     {
-        GetComponentInChildren<Text>().text = recommendation.name;
         methodImage.sprite = recommendation.ImageMethode;
     }
 
