@@ -14,7 +14,7 @@ public class UI_RecommendationFeedback : MonoBehaviour
     private void showFeedback(DataRecommendation recommendation)
     {
         GetComponentInChildren<ImageCorrectRecommendation>().gameObject.GetComponent<Image>().sprite = recommendation.ImageFeedback;
-        GetComponentInChildren<FeedbackCorrectAnswer>().gameObject.GetComponent<Text>().text = recommendation.TextFeedback;
+        GetComponentInChildren<FeedbackCorrectAnswer>().gameObject.GetComponent<Text>().text = recommendation.TextCorrectAnswer;
     }
 
     private void OnDisable()

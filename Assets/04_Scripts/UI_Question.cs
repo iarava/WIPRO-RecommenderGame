@@ -13,7 +13,7 @@ public class UI_Question : MonoBehaviour
 
     private void newRecommendationLoaded(Customer customer, DataRecommendation recommendation)
     {
-        //GetComponentInChildren<>().gameObject.GetComponent<Text>().text = recommendation.Question;
+        GetComponentInChildren<UI_QuestionSpeechText>().gameObject.GetComponent<Text>().text = recommendation.Question;
     }
 
     private void showFeedback(DataRecommendation recommendation)
