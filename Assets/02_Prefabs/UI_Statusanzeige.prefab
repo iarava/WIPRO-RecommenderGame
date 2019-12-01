@@ -359,6 +359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textLevel: {fileID: 8193181115465045567}
+  textScore: {fileID: 8193181114916520322}
 --- !u!1 &8193181114916520324
 GameObject:
   m_ObjectHideFlags: 0

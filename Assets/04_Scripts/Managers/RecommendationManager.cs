@@ -12,6 +12,7 @@ public class RecommendationManager : MonoBehaviour
 
     private Customer currentCustomer;
     private DataRecommendation recommendation;
+    private int countCorrectAnswers = 0;
 
     public event Action<bool> ShowRecommendation = delegate { };
     public event Action<Customer, DataRecommendation> NewRecommendationLoaded = delegate { };
@@ -52,7 +53,12 @@ public class RecommendationManager : MonoBehaviour
     private void UpdateStates()
     {
         gameLoop.AddScore();
-        gameLoop.GetLevelDefinition().RecommendationPool.nextDifficulty();
+        countCorrectAnswers = 0;
+        if (countCorrectAnswers >= 3)
+        {
+            gameLoop.GetLevelDefinition().RecommendationPool.nextDifficulty();
+            countCorrectAnswers = 0;
+        }
     }
 
     public void finishRecommendation()

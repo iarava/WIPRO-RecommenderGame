@@ -17,9 +17,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 9e92714f17536304c9c5d48d9a7436c9, type: 2}
     - {fileID: 11400000, guid: 2756554965b48ad4c8543034e2f0f0eb, type: 2}
     - {fileID: 11400000, guid: 1bfa5109886ebce4abca19f84a4f8a3a, type: 2}
-    Score: 160
+    ScoreAmount: 125
   - RecommendationCataloge:
     - {fileID: 11400000, guid: 5a0757787c434cb43bbe9f14da661f36, type: 2}
     - {fileID: 11400000, guid: 12938f4f2aa883b428e20b691034e8a1, type: 2}
     - {fileID: 11400000, guid: 55a5e951b517b11498d8a8016b3c0d90, type: 2}
-    Score: 320
+    ScoreAmount: 250
