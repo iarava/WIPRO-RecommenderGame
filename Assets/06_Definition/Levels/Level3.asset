@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bcbd2782a2800544bcd8745b4d8ea2c, type: 3}
   m_Name: Level3
   m_EditorClassIdentifier: 
-  levelTime: 30
+  levelTime: 40
   levelName: Collaborativ
   storySequence: {fileID: 11400000, guid: 01e56d2729e1b814dbf046110985b392, type: 2}
   recommendationPool: {fileID: 11400000, guid: 52f3a421a53d2624ebe2d904880ee77e, type: 2}
