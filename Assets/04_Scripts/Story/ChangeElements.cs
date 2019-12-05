@@ -7,7 +7,7 @@ public class ChangeElements : MonoBehaviour
     private StoryElement[] storyElements;
     private TutorialElement[] tutorialElements;
 
-    private void Awake()
+    private void Start()
     {
         storyElements = FindObjectsOfType<StoryElement>();
         tutorialElements = FindObjectsOfType<TutorialElement>();
