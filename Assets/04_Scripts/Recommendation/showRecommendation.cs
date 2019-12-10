@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class showRecommendation : MonoBehaviour
 {
-    UI_RecommendationFeedback recommendationFeedback;
-    UI_MethodeController methodeController;
+    private UI_RecommendationFeedback recommendationFeedback;
+    private UI_MethodeController methodeController;
+
+    private UI_RecommendationItem[] recommendationItems;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -15,6 +18,8 @@ public class showRecommendation : MonoBehaviour
 
         recommendationFeedback = GetComponentInChildren<UI_RecommendationFeedback>();
         methodeController = GetComponentInChildren<UI_MethodeController>();
+
+        recommendationItems = GetComponentsInChildren<UI_RecommendationItem>();
 
         gameObject.SetActive(false);
     }
@@ -27,12 +32,24 @@ public class showRecommendation : MonoBehaviour
         {
             methodeController.gameObject.SetActive(true);
             recommendationFeedback.gameObject.SetActive(false);
+
+            enableSelection(true);
         }
     }
     private void handleBeforeShowFeedback()
     {
         recommendationFeedback.gameObject.SetActive(true);
         methodeController.gameObject.SetActive(false);
+
+        enableSelection(false);        
+    }
+
+    private void enableSelection(bool enable)
+    {
+        foreach (UI_RecommendationItem item in recommendationItems)
+        {
+            item.enabled = enable;
+        }
     }
 
     private void OnDestroy()
