@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private GameLoopDefinition gameLoop = null;
 
+    public event Action startGameLoop = delegate { };
     public event Action newLevelLoaded = delegate { };
 
     private void Awake()
@@ -41,6 +42,7 @@ public class LevelManager : MonoBehaviour
     public void StartGame()
     {
         gameLoop.resetGameLoop();
+        startGameLoop();
         StartEinfuehrung();
     }
 
