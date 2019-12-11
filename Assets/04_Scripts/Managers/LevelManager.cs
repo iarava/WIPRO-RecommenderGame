@@ -8,12 +8,6 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance { get; private set; }
 
-    /*[SerializeField]
-    private LevelDefinition[] levels = null;
-
-    public int level = 0;
-    */
-
     [SerializeField]
     private GameLoopDefinition gameLoop = null;
 
@@ -95,6 +89,7 @@ public class LevelManager : MonoBehaviour
         else
         {
             Debug.Log("Game Finished");
+            SceneManager.LoadScene(4);
         }
     }
 }

@@ -8,4 +8,9 @@ public class UIStartMenuController : MonoBehaviour
     {
         LevelManager.Instance.StartGame();
     }
+
+    public void onQuitPressed()
+    {
+        Application.Quit();
+    }
 }
