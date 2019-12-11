@@ -14,6 +14,9 @@ public class GameLoopDefinition : ScriptableObject
 
     public void resetGameLoop()
     {
+        if(LevelCountReached())
+            GetLevelDefinition().RecommendationPool.resetPool();
+
         currentLevel = 0;
         isIntro = true;
         score = 0;

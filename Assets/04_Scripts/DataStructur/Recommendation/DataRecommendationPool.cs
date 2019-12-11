@@ -21,6 +21,12 @@ public class DataRecommendationPool : ScriptableObject
             currentPool++;
     }
 
+    public void previousDifficulty()
+    {
+        if (currentPool > 0)
+            currentPool--;
+    }
+
     public RecommendationPool GetRecommendationPool()
     {
         return recommendationPools[currentPool];

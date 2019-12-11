@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
 
     private void Awake()
     {
-        LevelManager.Instance.startGameLoop += stopRunningTimer;
+        LevelManager.Instance.stopGame += stopRunningTimer;
         LevelManager.Instance.newLevelLoaded += initializeTimer;
     }
 
@@ -49,7 +49,7 @@ public class Timer : MonoBehaviour
        
     private void onDestroy()
     {
-        LevelManager.Instance.startGameLoop -= stopRunningTimer;
+        LevelManager.Instance.stopGame -= stopRunningTimer;
         LevelManager.Instance.newLevelLoaded -= initializeTimer;
     }
 }

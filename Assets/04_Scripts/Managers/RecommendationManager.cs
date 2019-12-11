@@ -39,20 +39,26 @@ public class RecommendationManager : MonoBehaviour
     {
         if (correct)
         {
-            UpdateStates();
-            finishRecommendation();
+            CorrectRecommendation();
         }
         else
         {
-            BeforeShowFeedback();
-            ShowFeedback(recommendation); // TODO: Set DataRecommendation
+            WrongRecommendation();
         }
     }
 
-    private void UpdateStates()
+    private void WrongRecommendation()
+    {
+        BeforeShowFeedback();
+        gameLoop.GetLevelDefinition().RecommendationPool.previousDifficulty();
+        ShowFeedback(recommendation);
+    }
+
+    private void CorrectRecommendation()
     {
         gameLoop.AddScore();
         gameLoop.GetLevelDefinition().RecommendationPool.nextDifficulty();
+        finishRecommendation();
     }
 
     public void finishRecommendation()
