@@ -161,6 +161,9 @@ MonoBehaviour:
   - soundData: {fileID: 11400000, guid: 7ef2fb69fdd57e744a63fb5ee73b7da3, type: 2}
     audioClip: {fileID: 8300000, guid: 0327a7a2163fb594a9a94c91909f9ffb, type: 3}
     source: {fileID: 0}
+  - soundData: {fileID: 11400000, guid: 2f87b30f6ac7a8a4f901e5bef833fe3b, type: 2}
+    audioClip: {fileID: 8300000, guid: a41fb2cc86bcb8a40a4641c6ebcf7941, type: 3}
+    source: {fileID: 0}
 --- !u!4 &133360505
 Transform:
   m_ObjectHideFlags: 0

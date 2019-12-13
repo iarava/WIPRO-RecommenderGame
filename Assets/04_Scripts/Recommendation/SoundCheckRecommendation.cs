@@ -12,8 +12,8 @@ public class SoundCheckRecommendation : MonoBehaviour
 
     private void Awake()
     {
-        RecommendationManager.Instance.WrongSelection += handleWrongSelection;
-        RecommendationManager.Instance.CorrectSelection += handleCorrectSelection;
+            RecommendationManager.Instance.WrongSelection += handleWrongSelection;
+            RecommendationManager.Instance.CorrectSelection += handleCorrectSelection;
     }
 
     private void handleWrongSelection(Customer currentCustomer)
@@ -28,7 +28,7 @@ public class SoundCheckRecommendation : MonoBehaviour
             AudioManager.Instance.Play(SoundCorrectRecommendation);
     }
 
-    private void onDestroy()
+    private void OnDestroy()
     {
         RecommendationManager.Instance.WrongSelection -= handleWrongSelection;
         RecommendationManager.Instance.CorrectSelection -= handleCorrectSelection;
