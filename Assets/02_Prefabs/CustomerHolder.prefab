@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8365250187217156690}
   - component: {fileID: 7151225713110680117}
   - component: {fileID: 5479345731827418890}
+  - component: {fileID: 7420805115318882511}
   m_Layer: 10
   m_Name: CustomerHolder
   m_TagString: Untagged
@@ -88,6 +89,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reWanted: {fileID: 2036449458231486859}
   question: {fileID: 1472337309827126823}
+--- !u!114 &7420805115318882511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4502618208120207178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9d2e7999ae15df47a68a2600e893324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundWrongRecommendation: {fileID: 11400000, guid: 7ef2fb69fdd57e744a63fb5ee73b7da3,
+    type: 2}
+  SoundCorrectRecommendation: {fileID: 11400000, guid: ce55223794ce301428c1ae046c85c268,
+    type: 2}
 --- !u!1 &6778819886844286954
 GameObject:
   m_ObjectHideFlags: 0

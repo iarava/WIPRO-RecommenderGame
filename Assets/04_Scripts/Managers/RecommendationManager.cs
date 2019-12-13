@@ -15,9 +15,11 @@ public class RecommendationManager : MonoBehaviour
 
     public event Action<bool> ShowRecommendation = delegate { };
     public event Action<Customer, DataRecommendation> NewRecommendationLoaded = delegate { };
-    public event Action BeforeShowFeedback = delegate { };
     public event Action<DataRecommendation> ShowFeedback = delegate { };
     public event Action<Customer> RecommendationFinished = delegate { };
+
+    public event Action<Customer> WrongSelection = delegate { };
+    public event Action<Customer> CorrectSelection = delegate { };
 
     private void Start()
     {
@@ -49,13 +51,14 @@ public class RecommendationManager : MonoBehaviour
 
     private void WrongRecommendation()
     {
-        BeforeShowFeedback();
+        WrongSelection(currentCustomer);
         gameLoop.GetLevelDefinition().RecommendationPool.previousDifficulty();
         ShowFeedback(recommendation);
     }
 
     private void CorrectRecommendation()
     {
+        CorrectSelection(currentCustomer);
         gameLoop.AddScore();
         gameLoop.GetLevelDefinition().RecommendationPool.nextDifficulty();
         finishRecommendation();

@@ -14,7 +14,7 @@ public class showRecommendation : MonoBehaviour
     private void Awake()
     {
         RecommendationManager.Instance.ShowRecommendation += handleShowRecommendation;
-        RecommendationManager.Instance.BeforeShowFeedback += handleBeforeShowFeedback;
+        RecommendationManager.Instance.WrongSelection += handleWrongSelection;
 
         recommendationFeedback = GetComponentInChildren<UI_RecommendationFeedback>();
         methodeController = GetComponentInChildren<UI_MethodeController>();
@@ -36,7 +36,7 @@ public class showRecommendation : MonoBehaviour
             enableSelection(true);
         }
     }
-    private void handleBeforeShowFeedback()
+    private void handleWrongSelection(Customer customer)
     {
         recommendationFeedback.gameObject.SetActive(true);
         methodeController.gameObject.SetActive(false);
@@ -55,6 +55,6 @@ public class showRecommendation : MonoBehaviour
     private void OnDestroy()
     {
         RecommendationManager.Instance.ShowRecommendation -= handleShowRecommendation;
-        RecommendationManager.Instance.BeforeShowFeedback -= handleBeforeShowFeedback;
+        RecommendationManager.Instance.WrongSelection -= handleWrongSelection;
     }
 }
