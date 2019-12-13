@@ -162,7 +162,13 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 0327a7a2163fb594a9a94c91909f9ffb, type: 3}
     source: {fileID: 0}
   - soundData: {fileID: 11400000, guid: 2f87b30f6ac7a8a4f901e5bef833fe3b, type: 2}
-    audioClip: {fileID: 8300000, guid: a41fb2cc86bcb8a40a4641c6ebcf7941, type: 3}
+    audioClip: {fileID: 8300000, guid: 8c620676e4ee6ff429e821c67d8ac9ad, type: 3}
+    source: {fileID: 0}
+  - soundData: {fileID: 11400000, guid: 03896460c1b33f146a856af188bfd03b, type: 2}
+    audioClip: {fileID: 8300000, guid: f87f2ae52e8eded4d902e1265cc91e3f, type: 3}
+    source: {fileID: 0}
+  - soundData: {fileID: 11400000, guid: 98ae4f2a1e146154bb17e86742114854, type: 2}
+    audioClip: {fileID: 8300000, guid: 1f27b21ce71310746a8052038c42a13d, type: 3}
     source: {fileID: 0}
 --- !u!4 &133360505
 Transform:
@@ -693,6 +699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameLoop: {fileID: 11400000, guid: 5928e5bfb667af84683bbc1001421cde, type: 2}
+  gameSound: {fileID: 11400000, guid: 03896460c1b33f146a856af188bfd03b, type: 2}
 --- !u!114 &2032257079
 MonoBehaviour:
   m_ObjectHideFlags: 0

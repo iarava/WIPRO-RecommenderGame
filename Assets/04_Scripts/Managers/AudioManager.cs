@@ -37,6 +37,7 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Sound " + soundData.SoundName + " not found");
             return;
         }
+        s.source.volume = s.soundData.Volume;
         s.source.Play();
     }
 

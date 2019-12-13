@@ -314,31 +314,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6331204716070850237, guid: 644558bc07e2b874e89a8560b388e460,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6331204716070850237, guid: 644558bc07e2b874e89a8560b388e460,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6331204716070850237, guid: 644558bc07e2b874e89a8560b388e460,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6331204716070850237, guid: 644558bc07e2b874e89a8560b388e460,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6331204716070850237, guid: 644558bc07e2b874e89a8560b388e460,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 644558bc07e2b874e89a8560b388e460, type: 3}
 --- !u!1001 &1038144229

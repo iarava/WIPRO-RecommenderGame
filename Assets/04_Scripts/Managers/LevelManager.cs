@@ -11,6 +11,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private GameLoopDefinition gameLoop = null;
 
+    [SerializeField]
+    private SoundSetting gameSound;
+
     public event Action stopGame = delegate { };
     public event Action newLevelLoaded = delegate { };
 
@@ -43,6 +46,7 @@ public class LevelManager : MonoBehaviour
     {
         gameLoop.resetGameLoop();
         StartEinfuehrung();
+        AudioManager.Instance.Play(gameSound);
     }
 
     private void StartEinfuehrung()
@@ -90,6 +94,7 @@ public class LevelManager : MonoBehaviour
         else
         {
             Debug.Log("Game Finished");
+            AudioManager.Instance.Stop(gameSound);
             SceneManager.LoadScene(4);
         }
     }
@@ -97,6 +102,7 @@ public class LevelManager : MonoBehaviour
     public void StopGame()
     {
         gameLoop.resetGameLoop();
+        AudioManager.Instance.Stop(gameSound);
         stopGame();
         SceneManager.LoadScene(0);
     }

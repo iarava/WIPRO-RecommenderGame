@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: wrong
   m_EditorClassIdentifier: Assembly-CSharp::SoundSetting
   soundName: WrongRecommendation
-  volume: 1
+  volume: 0.7
   loop: 0

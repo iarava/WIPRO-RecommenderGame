@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: correct
+  m_Name: game
   m_EditorClassIdentifier: Assembly-CSharp::SoundSetting
-  soundName: CorrectRecommendation
-  volume: 0.8
-  loop: 0
+  soundName: Game Sound
+  volume: 0.05
+  loop: 1

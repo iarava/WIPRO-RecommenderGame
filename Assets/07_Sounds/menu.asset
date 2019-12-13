@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: menu
   m_EditorClassIdentifier: Assembly-CSharp::SoundSetting
   soundName: Menu Title Song
-  volume: 1
+  volume: 0.3
   loop: 1
