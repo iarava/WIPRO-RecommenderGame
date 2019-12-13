@@ -14,14 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Intro:
     sentences:
-    - Content-based Intro 1
-    - Content-based Intro 2
+    - "Hey, ich habe ein neues Konzept gefunden, um meine Empfehlungen zu verbessern.
+      Es nennt sich \xABKollaborative Empfehlungen\xBB"
+    - "Die Idee dahinter ist, dass Leute mit einem \xE4hnlichen Geschmack \xE4hnliche
+      Ding em\xF6gen."
+    - "Hier ein kleines Beispiel: Wenn wir beide den Film Toy Story m\xF6gen und ich
+      zus\xE4tzlich noch den Film Shrek mag, so ist die Chance hoch, dass du diesen
+      Film auch magst."
   tutorial:
     TutorialTitel: Tutorial Content-based
-    Description: Description Content-based
+    Description: "In diesem Level vergleichst du die Vorlieben deiner Freunde untereinander.
+      Wenn von zwei Freunden mit einem \xE4hnlichen Geschmack einer einen Film bereits
+      gesehen hat und mag, so ist die Chance hoch, dass die andere Person diesen auch
+      mag.\r\n\nUm den \xDCberblick zu behalten, hast du eine Tabelle erstellt. In
+      dieser sind Filme und die Vorlieben f\xFCr gewisse Filme von deinen Freunden.
+      Z\xE4hle beim L\xF6sen der Aufgaben jeweils zusammen, welche Filme bei Freunden
+      mit \xE4hnlichen Vorlieben besonders beliebt sind.\r\n"
     TutorialImage: {fileID: 21300000, guid: 1c64d8bd4205c024299f7b675e8b470b, type: 3}
   Outro:
     sentences:
-    - Content-based Outro 1
-    - Content-based Outro 2
-    - Content-based Outro 3
+    - "Vielen Dank f\xFCr deine Hilfe! Dank dir bin ich bereits viel besser geworden
+      im Geben von Empfehlungen!"
+    - "Gleich erf\xE4hrst du deinen erreichten Score. Vielleicht hast du ja soeben
+      den Highscore geknackt?"
