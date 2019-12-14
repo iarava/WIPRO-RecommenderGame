@@ -16,39 +16,44 @@ public class AudioManager : MonoBehaviour
         else if (Instance != this)
             Destroy(gameObject);
 
-        foreach(Sound s in sounds)
+        
+    }
+
+    private void Start()
+    {
+        foreach (Sound s in sounds)
         {
-            s.source = gameObject.AddComponent<AudioSource>();
+            s.InitializeSource(gameObject.AddComponent<AudioSource>());
 
-            s.source.playOnAwake = false;
+            s.AudioSource.playOnAwake = false;
 
-            s.source.clip = s.audioClip;
-            s.source.volume = s.soundData.Volume;
-            s.source.loop = s.soundData.Loop;
-            s.source.mute = s.soundData.isSoundEnabled();
+            s.AudioSource.clip = s.AudioClip;
+            s.AudioSource.volume = s.SoundData.Volume;
+            s.AudioSource.loop = s.SoundData.Loop;
+            s.AudioSource.mute = s.SoundData.isSoundEnabled();
         }
     }
 
-    public void Play(SoundSetting soundData)
+    public void Play(SoundData soundData)
     {
-        Sound s = Array.Find(sounds, sound => sound.soundData.SoundName == soundData.SoundName);
+        Sound s = Array.Find(sounds, sound => sound.SoundData.SoundName == soundData.SoundName);
         if(s == null)
         {
             Debug.LogWarning("Sound " + soundData.SoundName + " not found");
             return;
         }
-        s.source.volume = s.soundData.Volume;
-        s.source.Play();
+        s.AudioSource.volume = s.SoundData.Volume;
+        s.AudioSource.Play();
     }
 
-    public void Stop(SoundSetting soundData)
+    public void Stop(SoundData soundData)
     {
-        Sound s = Array.Find(sounds, sound => sound.soundData.SoundName == soundData.SoundName);
+        Sound s = Array.Find(sounds, sound => sound.SoundData.SoundName == soundData.SoundName);
         if (s == null)
         {
             Debug.LogWarning("Sound " + soundData.SoundName + " not found");
             return;
         }
-        s.source.Stop();
+        s.AudioSource.Stop();
     }
 }

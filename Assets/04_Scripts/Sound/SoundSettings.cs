@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Sound", menuName = "SoundData")]
-public class SoundSetting : ScriptableObject
+[CreateAssetMenu(fileName = "New SoundData", menuName = "SoundData")]
+public class SoundData : ScriptableObject
 {
     [SerializeField]
     private string soundName;

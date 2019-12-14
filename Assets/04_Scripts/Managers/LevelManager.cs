@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
     private GameLoopDefinition gameLoop = null;
 
     [SerializeField]
-    private SoundSetting gameSound;
+    private SoundData gameSound;
 
     public event Action stopGame = delegate { };
     public event Action newLevelLoaded = delegate { };

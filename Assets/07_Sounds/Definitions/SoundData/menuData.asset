@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: wrong
-  m_EditorClassIdentifier: Assembly-CSharp::SoundSetting
-  soundName: WrongRecommendation
-  volume: 0.7
-  loop: 0
+  m_Name: menuData
+  m_EditorClassIdentifier: Assembly-CSharp::SoundData
+  soundName: Menu
+  volume: 0.3
+  loop: 1
