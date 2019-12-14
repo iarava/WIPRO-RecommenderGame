@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2750089498979938059}
   - component: {fileID: 2750089498979938058}
   - component: {fileID: 8083136309704397750}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI_MethodeEmpfehlung
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,11 +35,11 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -160, y: -200}
-  m_SizeDelta: {x: 300, y: 370}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -20, y: 20}
+  m_SizeDelta: {x: 450, y: 555}
+  m_Pivot: {x: 1, y: 0}
 --- !u!222 &2750089498979938059
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2750089499565072645}
   - component: {fileID: 2750089499565072647}
   - component: {fileID: 2750089499565072646}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ImageEmpfehlung
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,8 +122,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 155}
-  m_SizeDelta: {x: 280, y: 300}
+  m_AnchoredPosition: {x: 0.000030517578, y: 190.1}
+  m_SizeDelta: {x: 612.3, y: 333.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2750089499565072647
 CanvasRenderer:
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 2750089500122997418}
   - component: {fileID: 2750089500122997412}
   - component: {fileID: 2750089500122997419}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,8 +194,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -35}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.000030517578, y: -26.600006}
+  m_SizeDelta: {x: 612.3, y: 53.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2750089500122997412
 CanvasRenderer:
@@ -251,10 +251,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 27.4
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -39.816048, y: 0, z: -39.843113, w: 0}
+  m_margin: {x: 1.0673752, y: 0, z: 3.3116722, w: 0}
   m_textInfo:
     textComponent: {fileID: 2750089500122997419}
     characterCount: 18

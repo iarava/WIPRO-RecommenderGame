@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8890072953503256391}
   - component: {fileID: 5999221445492370997}
   - component: {fileID: 1706908784817092985}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TextConfirm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,13 +91,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18
-  m_fontSizeBase: 24
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 2750089498979938059}
   - component: {fileID: 2750089498979938058}
   - component: {fileID: 114632623769358634}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI_Feedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
+  m_Color: {r: 0.4811321, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 2750089499565072647}
   - component: {fileID: 2750089499565072646}
   - component: {fileID: 6550190676757124392}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ImageEmpfehlung
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,8 +278,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 280, y: 300}
+  m_AnchoredPosition: {x: 0.000024796, y: 0.000015259}
+  m_SizeDelta: {x: 612.3, y: 342.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2750089499565072647
 CanvasRenderer:
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 2750089500122997418}
   - component: {fileID: 2750089500122997412}
   - component: {fileID: 2750089500122997419}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,8 +362,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -35}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -0.0025101, y: -31.125}
+  m_SizeDelta: {x: 612.29, y: 62.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2750089500122997412
 CanvasRenderer:
@@ -419,10 +419,10 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 43.05
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -39.816048, y: 0, z: -39.843113, w: 0}
+  m_margin: {x: -1.203743, y: 0, z: 1.040432, w: 0}
   m_textInfo:
     textComponent: {fileID: 2750089500122997419}
     characterCount: 12
@@ -495,7 +495,7 @@ GameObject:
   - component: {fileID: 6211569872587209889}
   - component: {fileID: 5693727389361955088}
   - component: {fileID: 963716894519289950}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightAnswer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,8 +518,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 140, y: -30}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 207, y: -30.575}
+  m_SizeDelta: {x: 391.5, y: 51.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6211569872587209889
 CanvasRenderer:
@@ -575,13 +575,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -613,7 +613,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -34.24176, y: 0, z: -33.445435, w: 21.500626}
+  m_margin: {x: 1.8080444, y: 0, z: 9.814575, w: 8.110657}
   m_textInfo:
     textComponent: {fileID: 5693727389361955088}
     characterCount: 26
@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 117068836105495787}
   - component: {fileID: 4076227465473492079}
   - component: {fileID: 5964475578483378154}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Confirm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -686,11 +686,11 @@ RectTransform:
   m_Father: {fileID: 3331365025245244089}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -51.6, y: 14.9}
-  m_SizeDelta: {x: 80, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 11.25, y: 8.5}
+  m_SizeDelta: {x: 150, y: 30}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &2200571786854710142
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 117068836105495787}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 3331365025245244089}
   - component: {fileID: 9101549237416646695}
   - component: {fileID: 4947953045850026458}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Panel_Confirm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -825,8 +825,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 35.5}
-  m_SizeDelta: {x: 280, y: 60}
+  m_AnchoredPosition: {x: 12.9, y: 46.025}
+  m_SizeDelta: {x: 468.5, y: 81.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9101549237416646695
 CanvasRenderer:
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 0.8627451}
+  m_Color: {r: 0.40000004, g: 0, b: 0, a: 0.8627451}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
