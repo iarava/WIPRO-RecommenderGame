@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Intouchables
   m_EditorClassIdentifier: 
   nameItem: Intachoubles
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 03f3fa253aab57b42837e89274daf42f, type: 3}

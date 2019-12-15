@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ToyStory
   m_EditorClassIdentifier: 
   nameItem: Toy Story
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 6346fa9e8b84000438526b3a02eda6c3, type: 3}

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: KnivesOut
   m_EditorClassIdentifier: 
   nameItem: Knives Out
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 3051314bbf5ac70428cc1fe36effee27, type: 3}

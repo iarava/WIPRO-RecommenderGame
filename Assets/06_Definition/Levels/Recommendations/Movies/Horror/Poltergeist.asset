@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Poltergeist
   m_EditorClassIdentifier: 
   nameItem: Poltergeist
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 4949c8ff44327724ea14d3bb06b5c06f, type: 3}

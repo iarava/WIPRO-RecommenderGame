@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Shrek
   m_EditorClassIdentifier: 
   nameItem: Shrek
-  imageItem: {fileID: 21300000, guid: 63cae1411a6ac674d96ec0582875fb87, type: 3}
+  imageItem: {fileID: 21300000, guid: 547a0186a112c6a47bdb0ff944951598, type: 3}

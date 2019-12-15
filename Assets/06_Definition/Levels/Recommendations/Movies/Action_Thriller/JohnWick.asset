@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: JohnWick
   m_EditorClassIdentifier: 
   nameItem: JohnWick
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: d044ebe5c7f816d46945b822afd6d748, type: 3}

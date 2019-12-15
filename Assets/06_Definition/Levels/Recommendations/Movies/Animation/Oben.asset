@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Oben
   m_EditorClassIdentifier: 
   nameItem: 
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: cef5d1d71d8704443aa66e59fc79b705, type: 3}

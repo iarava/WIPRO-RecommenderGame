@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Parasite
   m_EditorClassIdentifier: 
   nameItem: Parasite
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 8dfc29ff477cbcf45a7e3e14f29d8298, type: 3}

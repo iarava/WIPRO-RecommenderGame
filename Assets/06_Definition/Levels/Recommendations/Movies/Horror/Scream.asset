@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Scream
   m_EditorClassIdentifier: 
   nameItem: Scream
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 86dac7687dccbe64aade98f9330c89b7, type: 3}

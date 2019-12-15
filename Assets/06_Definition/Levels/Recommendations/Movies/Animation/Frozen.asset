@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Frozen
   m_EditorClassIdentifier: 
   nameItem: Frozen
-  imageItem: {fileID: 21300000, guid: 63cae1411a6ac674d96ec0582875fb87, type: 3}
+  imageItem: {fileID: 21300000, guid: a2c19eaae5f3f6d4d97b815e28b5c8ae, type: 3}

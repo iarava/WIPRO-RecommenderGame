@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Lara
   m_EditorClassIdentifier: 
   nameItem: Lara
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: eb1854fa68e958a49bd6083b0cef91e0, type: 3}

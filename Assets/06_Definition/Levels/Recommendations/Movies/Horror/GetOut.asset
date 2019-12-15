@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: GetOut
   m_EditorClassIdentifier: 
   nameItem: GetOut
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 6e106d7602598c0408dd639ba651be33, type: 3}

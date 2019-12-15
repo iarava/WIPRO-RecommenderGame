@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Joker
   m_EditorClassIdentifier: 
   nameItem: Joker
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: c64bee1ea212d064f923e7876ab285b6, type: 3}

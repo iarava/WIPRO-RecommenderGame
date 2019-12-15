@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: OnceUpon
   m_EditorClassIdentifier: 
   nameItem: Once Upon a Time
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 053998b9689299643a79174ba648845a, type: 3}

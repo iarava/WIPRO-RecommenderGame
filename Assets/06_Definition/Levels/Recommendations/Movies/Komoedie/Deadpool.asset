@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Deadpool
   m_EditorClassIdentifier: 
   nameItem: Deadpool
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 24d070a5117b6f6418b0dc3afd1ca13b, type: 3}

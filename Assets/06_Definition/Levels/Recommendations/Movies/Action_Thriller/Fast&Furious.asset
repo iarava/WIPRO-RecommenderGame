@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Fast&Furious
   m_EditorClassIdentifier: 
   nameItem: Fast & Furious
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 61ec996fde3832e478616dae323a5fe0, type: 3}

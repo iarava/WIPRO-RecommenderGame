@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: StarWars
   m_EditorClassIdentifier: 
   nameItem: Star Wars
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: e54bb8d2a96c86d4eb19fa710e0573db, type: 3}

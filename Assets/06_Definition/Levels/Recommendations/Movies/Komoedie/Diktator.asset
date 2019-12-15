@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Diktator
   m_EditorClassIdentifier: 
   nameItem: Der Diktator
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 91b0c1cf69aa6de4da2fe8ae3aa49ac6, type: 3}

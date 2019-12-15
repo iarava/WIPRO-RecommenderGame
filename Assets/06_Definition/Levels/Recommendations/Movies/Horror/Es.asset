@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Es
   m_EditorClassIdentifier: 
   nameItem: Es
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 92f09c378a771f348be9824a8e4cc577, type: 3}

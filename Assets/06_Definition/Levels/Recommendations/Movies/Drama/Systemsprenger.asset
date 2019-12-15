@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Systemsprenger
   m_EditorClassIdentifier: 
   nameItem: Systemsprenger
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: dbe687730443b864aa5760a5629bf7b6, type: 3}

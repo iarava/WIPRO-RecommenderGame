@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ShutterIsland
   m_EditorClassIdentifier: 
   nameItem: Shutter Island
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 0b2a948f4b51e3b46931f1a3ae3194b3, type: 3}

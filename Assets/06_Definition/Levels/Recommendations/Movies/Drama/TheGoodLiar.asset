@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TheGoodLiar
   m_EditorClassIdentifier: 
   nameItem: The Good Liar
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: a95731022ef492243a7fbe3e904f2896, type: 3}

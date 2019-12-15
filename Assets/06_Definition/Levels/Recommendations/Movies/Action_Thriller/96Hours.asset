@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 96Hours
   m_EditorClassIdentifier: 
   nameItem: 96 Hours
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 2a67496bf73546a4fb9084be05124f98, type: 3}

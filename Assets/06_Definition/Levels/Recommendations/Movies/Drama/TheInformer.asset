@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TheInformer
   m_EditorClassIdentifier: 
   nameItem: The Informer
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 5548f406b6760444096a67e8f89b75e9, type: 3}

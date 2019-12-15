@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Insidious
   m_EditorClassIdentifier: 
   nameItem: Insidious
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 3e1069207a68c884f81d41c45a5ce4c8, type: 3}

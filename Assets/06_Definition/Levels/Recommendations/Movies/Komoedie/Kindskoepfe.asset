@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Kindskoepfe
   m_EditorClassIdentifier: 
   nameItem: "Kindsk\xF6pfe"
-  imageItem: {fileID: 0}
+  imageItem: {fileID: 21300000, guid: 06cac60a018872b418d65ba52af4e2a5, type: 3}
