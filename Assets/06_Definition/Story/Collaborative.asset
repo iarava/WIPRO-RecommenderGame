@@ -14,30 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Intro:
     sentences:
-    - "Hey ich bins wieder. Ich habe nachgeforscht und etwas interessantes zum Thema
-      \xABInhaltsbasierte Empfehlungsdienste\xBB (Content-Based Filtering) gefunden."
-    - Bei diesem Vorgehen weise ich den Filmen Eigenschaften zu.
-    - "Eigenschaften sind zum Beispiel Filmkategorien wie \xABAction\xBB oder \xABRomantik\xBB.
-      Aber auch die L\xE4nge eines Filmes und dessen Schauspieler sind Eigenschaften."
-    - "Ich habe gemerkt, dass meine Freunde einen Film besonders gut m\xF6gen, wenn
-      er m\xF6glichst viele gleiche Eigenschaften hat wie die Filme, die sie zuvor
-      gesehen haben"
+    - "Hey, ich habe ein neues Konzept gefunden, um meine Empfehlungen zu verbessern.
+      Es nennt sich \xABKollaborative Empfehlungen\xBB"
+    - "Die Idee dahinter ist, dass Leute mit einem \xE4hnlichen Geschmack \xE4hnliche
+      Dinge m\xF6gen."
+    - "Hier ein kleines Beispiel: Wenn wir beide den Film Toy Story m\xF6gen und ich
+      zus\xE4tzlich noch den Film Shrek mag, so ist die Chance hoch, dass du diesen
+      Film auch magst."
   tutorial:
     TutorialTitel: Tutorial Collaborative
-    Description: "In diesem Level gibst du deinen Freunden Empfehlungen Aufgrund ihrer
-      Vorlieben. Du hast dir einige Eigenschaften zu ein paar Filmen aufgeschrieben,
-      welche du in einer Tabelle angeordnet hast. Wenn du nun eine Empfehlung abgibst
-      und weisst, welche Eigenschaften deinem Gegen\xFCber gefallen, so kannst du
-      einen Film ausw\xE4hlen, der diesem am \xE4hnlichsten ist."
+    Description: "In diesem Level vergleichst du die Vorlieben deiner Freunde untereinander.
+      Wenn von zwei Freunden mit einem \xE4hnlichen Geschmack einer einen Film bereits
+      gesehen hat und mag, so ist die Chance hoch, dass die andere Person diesen auch
+      mag.\r\nUm den \xDCberblick zu behalten, hast du eine Tabelle erstellt (In der
+      Realit\xE4t w\xE4ren diese viel gr\xF6sser). In dieser sind Filme und die Vorlieben
+      f\xFCr gewisse Filme von deinen Freunden. Z\xE4hle beim L\xF6sen der Aufgaben
+      jeweils zusammen, welche Filme bei Freunden mit \xE4hnlichen Vorlieben besonders
+      beliebt sind.\r"
     TutorialImage: {fileID: 21300000, guid: 9e21ef6e0b52eec4fbca5378396d580e, type: 3}
   Outro:
     sentences:
-    - "Ich habe gemerkt, dass meine Empfehlungen bereits sehr viel besser waren als
-      zuvor. Wenn ich auf die pers\xF6nlichen Vorlieben meiner Freunde eingehe, treffe
-      ich ihren Geschmack am meisten"
-    - "Allerdings f\xE4llt mir auf, dass ich immer etwa die gleichen Dinge zueinander
-      Vorschlage. Ich kann mir gut vorstellen, dass das mit der Zeit \xF6de langweilig
-      wird"
-    - "Mir ist aufgefallen, dass Freunde welche bereits vorher \xE4hnliche Filme gesehen
-      haben auch sp\xE4ter einen \xE4hnlichen Geschmack haben. Vielleicht finde ich
-      da noch etwas raus"
+    - "Vielen Dank f\xFCr deine Hilfe! Dank dir bin ich bereits viel besser geworden
+      im Geben von Empfehlungen!"
+    - Wie du vielleicht bereits beim Spielen gemerkt hast, werden Empfehlungsdienste
+      in Anwendungen wie Netflix, Spotify, Webshops usw. eingesetzt.
+    - "Damit diese Dienste jedoch optimale Empfehlungen geben k\xF6nnen, werden die
+      verschiedenen Methoden miteinander kombiniert."
+    - "Gleich erf\xE4hrst du deinen erreichten Score. Vielleicht hast du ja soeben
+      den Highscore geknackt?"

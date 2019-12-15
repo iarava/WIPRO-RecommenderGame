@@ -14,26 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Intro:
     sentences:
-    - "Hey ich bin XYZ. Auf dem Pausenhof bin ich f\xFCr meine guten Filmkenntnisse
+    - "Hey ich bin Alice. Auf dem Pausenhof bin ich f\xFCr meine guten Filmkenntnisse
       bekannt. Man nennt mich auch das Shazam f\xFCr bewegte Bilder."
     - "Da ich so viel \xFCber Filme weiss, werde ich auch h\xE4ufig von meinen Mitsch\xFClerinnen
       und Mitsch\xFClern nach guten Empfehlungen gefragt."
     - "Ich m\xF6chte meine Kenntnisse stetig verbessern und habe im Internet etwas
       zu sogenannten Empfehlungssystemen (Recommender System auf Englisch) gelesen.
-      Das sind Programme, welche dir Empfehlungen Aufgrund dessen geben, was dir gef\xE4llt."
+      Das sind Programme, welche dir Empfehlungen Aufgrund dessen geben, was dir gefallen
+      k\xF6nnte."
     - Hilfst du mir diese unterschiedlichen Methoden kennen zu erlernen, um noch besser
       zu werden?
   tutorial:
     TutorialTitel: Tutorial Association
     Description: "Um die bestm\xF6glichsten Vorschl\xE4ge geben zu k\xF6nnen, holst
       du dir ein paar Statistiken aus dem Internet zur Hilfe. Diese zeigen dir an,
-      welche Filme wie h\xE4ufig angeschaut wurden. Empfehlungen triffst du, indem
-      du den Film ausw\xE4hlst, der Aufgrund dieser Liste am besten passt"
+      welche Filme wie gut bewertet wurden.\n\nUm eine Empfehlung ab zu geben, schau
+      auf deine Liste. Probiere aufgrund der Frage heraus zu finden, welchen der Filme
+      am empfehlenswertesten ist.\r\n\nHast du den passenden Film gefunden, dann klicke
+      ihn an und ziehe in mit der Maus \xFCber das Feld bei deiner Kollegin / deinem
+      Kollegen.\r"
     TutorialImage: {fileID: 21300000, guid: 0b78f56800cbf8c4986a22edceef8dff, type: 3}
   Outro:
     sentences:
     - "Deine Vorschl\xE4ge kamen zu Beginn echt gut an!"
     - "Wie du aber bestimmt schon gemerkt hast, sind deine Empfehlungen f\xFCr jeden
       meiner Freunde gleich."
-    - "Ich m\xF6chte gerne mehr auf meine Freunde eingehen und ihnen die Filme zeigen,
-      welche am besten ihren eigenen Geschmack treffen!"
+    - "Deshalb wird diese Methode oft nur zu Beginn von Anwendungen ben\xF6tigt, um
+      die Interessen von Kunden einsch\xE4tzen zu k\xF6nnen. Oft wird diese Methode
+      auch in Onlineshops gebraucht"
+    - "Ich m\xF6chte gerne mehr auf die Interessen meiner Freunde eingehen und ihnen
+      die Filme zeigen, welche am besten ihren eigenen Geschmack treffen!"

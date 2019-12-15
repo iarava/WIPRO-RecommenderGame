@@ -14,26 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Intro:
     sentences:
-    - "Hey, ich habe ein neues Konzept gefunden, um meine Empfehlungen zu verbessern.
-      Es nennt sich \xABKollaborative Empfehlungen\xBB"
-    - "Die Idee dahinter ist, dass Leute mit einem \xE4hnlichen Geschmack \xE4hnliche
-      Ding em\xF6gen."
-    - "Hier ein kleines Beispiel: Wenn wir beide den Film Toy Story m\xF6gen und ich
-      zus\xE4tzlich noch den Film Shrek mag, so ist die Chance hoch, dass du diesen
-      Film auch magst."
+    - "Hey ich bins wieder. Ich habe nachgeforscht und etwas interessantes zum Thema
+      \xABInhaltsbasierte Empfehlungsdienste\xBB (Content-Based Filtering) gefunden."
+    - Bei diesem Vorgehen weise ich den Filmen Eigenschaften zu.
+    - "Eigenschaften sind zum Beispiel Filmkategorien wie \xABAction\xBB oder \xABRomantik\xBB.
+      Aber auch die L\xE4nge eines Filmes und dessen Schauspieler sind Eigenschaften."
+    - "Ich habe gemerkt, dass meine Freunde einen Film besonders gut m\xF6gen, wenn
+      er m\xF6glichst viele gleiche Eigenschaften hat wie die Filme, die sie zuvor
+      gesehen haben"
   tutorial:
     TutorialTitel: Tutorial Content-based
-    Description: "In diesem Level vergleichst du die Vorlieben deiner Freunde untereinander.
-      Wenn von zwei Freunden mit einem \xE4hnlichen Geschmack einer einen Film bereits
-      gesehen hat und mag, so ist die Chance hoch, dass die andere Person diesen auch
-      mag.\r\n\nUm den \xDCberblick zu behalten, hast du eine Tabelle erstellt. In
-      dieser sind Filme und die Vorlieben f\xFCr gewisse Filme von deinen Freunden.
-      Z\xE4hle beim L\xF6sen der Aufgaben jeweils zusammen, welche Filme bei Freunden
-      mit \xE4hnlichen Vorlieben besonders beliebt sind.\r\n"
+    Description: "In diesem Level gibst du deinen Freunden Empfehlungen Aufgrund ihrer
+      Vorlieben. Du hast dir einige Eigenschaften zu ein paar Filmen aufgeschrieben,
+      welche du in einer Tabelle angeordnet hast (Im Spiel ist diese Tabelle vereinfacht
+      gegen\xFCber der realen Welt). Wenn du nun eine Empfehlung abgibst und weisst,
+      welche Eigenschaften deinem Gegen\xFCber gefallen, so kannst du einen Film ausw\xE4hlen,
+      der diesem am \xE4hnlichsten ist."
     TutorialImage: {fileID: 21300000, guid: 1c64d8bd4205c024299f7b675e8b470b, type: 3}
   Outro:
     sentences:
-    - "Vielen Dank f\xFCr deine Hilfe! Dank dir bin ich bereits viel besser geworden
-      im Geben von Empfehlungen!"
-    - "Gleich erf\xE4hrst du deinen erreichten Score. Vielleicht hast du ja soeben
-      den Highscore geknackt?"
+    - "Ich habe gemerkt, dass meine Empfehlungen bereits sehr viel besser waren als
+      zuvor. Wenn ich auf die pers\xF6nlichen Vorlieben meiner Freunde eingehe, treffe
+      ich ihren Geschmack am meisten"
+    - "Allerdings f\xE4llt mir auf, dass ich immer etwa die gleichen Dinge zueinander
+      Vorschlage. Ich kann mir gut vorstellen, dass das mit der Zeit \xF6de langweilig
+      wird."
+    - "Auf dieses Ph\xE4nomen trifft man beispielsweise auf Youtube, wenn man die
+      Playlist eines Songs abspielt. So kommt es oft vor, dass mit der Zeit die immer
+      gleichen Lieder kommen."
+    - "Mir ist aufgefallen, dass Freunde welche bereits vorher \xE4hnliche Filme gesehen
+      haben auch sp\xE4ter einen \xE4hnlichen Geschmack haben. Vielleicht finde ich
+      da noch etwas raus."
