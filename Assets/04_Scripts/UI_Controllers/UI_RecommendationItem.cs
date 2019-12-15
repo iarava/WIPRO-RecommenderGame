@@ -69,7 +69,7 @@ public class UI_RecommendationItem : MonoBehaviour, IDragHandler, IDropHandler, 
 
         Debug.Log(string.Format("X: {0} {1} ; Y: {2} {3}", minX, maxX, minY, maxY));
         
-        if(targetPos.x > minX && targetPos.y < maxX &&
+        if(targetPos.x > minX && targetPos.x < maxX &&
             targetPos.y > minY && targetPos.y < maxY)
         {
             return true;

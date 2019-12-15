@@ -109,8 +109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 960, y: 518.4}
-  horizontalLength: 150
-  verticalLength: 150
+  horizontalLength: 170
+  verticalLength: 170
 --- !u!1 &2369224436013979505
 GameObject:
   m_ObjectHideFlags: 0
