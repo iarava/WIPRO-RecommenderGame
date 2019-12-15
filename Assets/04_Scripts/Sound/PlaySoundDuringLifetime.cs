@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlaySoundDuringLifetime : MonoBehaviour
 {
     [SerializeField]
-    private SoundData sound;
+    private AudioManager.SoundType sound;
 
     private void Start()
     {

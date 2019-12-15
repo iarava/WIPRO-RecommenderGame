@@ -2,44 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Sound", menuName = "Sound")]
-public class Sound : ScriptableObject
+[System.Serializable]
+public class Sound
 {
-    [SerializeField]
-    private SoundData soundData;
+    public string soundName;
 
-    [SerializeField]
-    private AudioClip audioClip;
+    public AudioManager.SoundType soundType;
 
+    [Range(0f,1f)]
+    public float volume;
+    public bool loop;
+    public bool mute = false;
 
-    private AudioSource audioSource = null;
+    public AudioClip audioClip;
 
-    public SoundData SoundData
-    {
-        get
-        {
-            return soundData;
-        }
-    }
-
-    public AudioClip AudioClip
-    {
-        get
-        {
-            return audioClip;
-        }
-    }
-
-    public AudioSource AudioSource
-    {
-        get
-        {
-            return audioSource;
-        }
-    }
-
-    public void InitializeSource(AudioSource source)
-    {
-        audioSource = source;
-    }
+    [HideInInspector]
+    public AudioSource audioSource;
 }

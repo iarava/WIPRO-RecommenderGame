@@ -4,6 +4,15 @@ using System;
 
 public class AudioManager : MonoBehaviour
 {
+    public enum SoundType
+    {
+        MENU,
+        GAME,
+        END,
+        CORRECT,
+        WRONG
+    }
+
     public static AudioManager Instance { get; private set; }
 
     [SerializeField]
@@ -14,46 +23,43 @@ public class AudioManager : MonoBehaviour
         if (Instance == null)
             Instance = this;
         else if (Instance != this)
+        {
             Destroy(gameObject);
-
+        }
         
-    }
-
-    private void Start()
-    {
         foreach (Sound s in sounds)
         {
-            s.InitializeSource(gameObject.AddComponent<AudioSource>());
+            s.audioSource = gameObject.AddComponent<AudioSource>();
 
-            s.AudioSource.playOnAwake = false;
+            s.audioSource.playOnAwake = false;
 
-            s.AudioSource.clip = s.AudioClip;
-            s.AudioSource.volume = s.SoundData.Volume;
-            s.AudioSource.loop = s.SoundData.Loop;
-            s.AudioSource.mute = s.SoundData.isSoundEnabled();
+            s.audioSource.clip = s.audioClip;
+            s.audioSource.volume = s.volume;
+            s.audioSource.loop = s.loop;
+            s.audioSource.mute = s.mute;
         }
     }
 
-    public void Play(SoundData soundData)
+    public void Play(SoundType soundType)
     {
-        Sound s = Array.Find(sounds, sound => sound.SoundData.SoundName == soundData.SoundName);
+        Sound s = Array.Find(sounds, sound => sound.soundType == soundType);
         if(s == null)
         {
-            Debug.LogWarning("Sound " + soundData.SoundName + " not found");
+            Debug.LogWarning("Sound " + name + " not found");
             return;
         }
-        s.AudioSource.volume = s.SoundData.Volume;
-        s.AudioSource.Play();
+        Debug.Log(s.audioSource);
+        s.audioSource.Play();
     }
 
-    public void Stop(SoundData soundData)
+    public void Stop(SoundType soundType)
     {
-        Sound s = Array.Find(sounds, sound => sound.SoundData.SoundName == soundData.SoundName);
+        Sound s = Array.Find(sounds, sound => sound.soundType == soundType);
         if (s == null)
         {
-            Debug.LogWarning("Sound " + soundData.SoundName + " not found");
+            Debug.LogWarning("Sound not found");
             return;
         }
-        s.AudioSource.Stop();
+        s.audioSource.Stop();
     }
 }

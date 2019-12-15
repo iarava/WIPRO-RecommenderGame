@@ -155,11 +155,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - {fileID: 11400000, guid: 968e9556a7ef74241a70374f128460ae, type: 2}
-  - {fileID: 11400000, guid: 5f43bd97abf30f149a120e0ab38015db, type: 2}
-  - {fileID: 11400000, guid: 2b4a8f90ae7d7e946ac038ddbd5438f5, type: 2}
-  - {fileID: 11400000, guid: 3c15a8cddfaee5247ab4e1f8cd16e336, type: 2}
-  - {fileID: 11400000, guid: 711e3c45c62dbaf4c867624305cf86be, type: 2}
+  - soundName: 
+    soundType: 0
+    volume: 0.3
+    loop: 1
+    mute: 0
+    audioClip: {fileID: 8300000, guid: 8c620676e4ee6ff429e821c67d8ac9ad, type: 3}
+    audioSource: {fileID: 0}
+  - soundName: 
+    soundType: 1
+    volume: 0.1
+    loop: 1
+    mute: 0
+    audioClip: {fileID: 8300000, guid: f87f2ae52e8eded4d902e1265cc91e3f, type: 3}
+    audioSource: {fileID: 0}
+  - soundName: 
+    soundType: 2
+    volume: 0.3
+    loop: 1
+    mute: 0
+    audioClip: {fileID: 8300000, guid: 1f27b21ce71310746a8052038c42a13d, type: 3}
+    audioSource: {fileID: 0}
+  - soundName: 
+    soundType: 3
+    volume: 0.8
+    loop: 0
+    mute: 0
+    audioClip: {fileID: 8300000, guid: f19c7da9a6bde784cb11de2189af77c8, type: 3}
+    audioSource: {fileID: 0}
+  - soundName: 
+    soundType: 4
+    volume: 0.6
+    loop: 0
+    mute: 0
+    audioClip: {fileID: 8300000, guid: 0327a7a2163fb594a9a94c91909f9ffb, type: 3}
+    audioSource: {fileID: 0}
 --- !u!4 &133360505
 Transform:
   m_ObjectHideFlags: 0
@@ -774,7 +804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameLoop: {fileID: 11400000, guid: 5928e5bfb667af84683bbc1001421cde, type: 2}
-  gameSound: {fileID: 11400000, guid: e74a5b7b9e01e204e8fadaa06986ecee, type: 2}
+  gameSound: 1
 --- !u!114 &2032257079
 MonoBehaviour:
   m_ObjectHideFlags: 0

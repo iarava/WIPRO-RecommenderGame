@@ -5,10 +5,10 @@ using UnityEngine;
 public class SoundCheckRecommendation : MonoBehaviour
 {
     [SerializeField]
-    private SoundData SoundWrongRecommendation;
+    private AudioManager.SoundType SoundWrongRecommendation;
 
     [SerializeField]
-    private SoundData SoundCorrectRecommendation;
+    private AudioManager.SoundType SoundCorrectRecommendation;
 
     private void Awake()
     {
