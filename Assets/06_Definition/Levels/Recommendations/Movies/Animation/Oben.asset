@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16d3c7f17ed13bf459ded1c5b3bb6ddd, type: 3}
   m_Name: Oben
   m_EditorClassIdentifier: 
-  nameItem: 
+  nameItem: Oben
   imageItem: {fileID: 21300000, guid: cef5d1d71d8704443aa66e59fc79b705, type: 3}
