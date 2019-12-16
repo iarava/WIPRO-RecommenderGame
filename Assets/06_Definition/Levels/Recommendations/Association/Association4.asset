@@ -12,27 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c314cb9808d87a649956aac07ea8e87a, type: 3}
   m_Name: Association4
   m_EditorClassIdentifier: 
-  question: Empfehle Movie4
+  question: "Ich bin der Meinung, dass schlecht Bewertete Filme h\xE4ufig besser sind
+    als man denkt! Kannst du mir einen Film empfehlen?"
   possibleSelections:
-  - RecommendationObject: {fileID: 11400000, guid: f50439296093a37438fbb45088c46e95,
+  - RecommendationObject: {fileID: 11400000, guid: 2ec55fceb632b5940ad6f3ca06e71876,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 961b972e702c1fd4a83da2fb51214323,
+  - RecommendationObject: {fileID: 11400000, guid: 885ea593e38305344b9879c82359fbcf,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 13909d314d23eb14fa543aa2af5dada9,
+  - RecommendationObject: {fileID: 11400000, guid: a30faa904f6682e4fa0b1bafc43f444d,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 0a18067c6196de34eb0f4c98f1066e81,
+  - RecommendationObject: {fileID: 11400000, guid: d767a563c65b1e04586f4beee6cfe383,
       type: 2}
     correctAnswer: 1
-  - RecommendationObject: {fileID: 11400000, guid: 78d5de94c36271b4e96d6b2d7b45686c,
+  - RecommendationObject: {fileID: 11400000, guid: aa208674351f80f4894e715f88660599,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: ed55085daf761734bba41ce580c6c2f3,
+  - RecommendationObject: {fileID: 11400000, guid: 0db55d83d03407f4596bd9ec828c7af6,
       type: 2}
     correctAnswer: 0
-  imageMethode: {fileID: 21300000, guid: 0b78f56800cbf8c4986a22edceef8dff, type: 3}
-  imageFeedback: {fileID: 21300000, guid: 0b78f56800cbf8c4986a22edceef8dff, type: 3}
-  textFeedback: Siehe Moviename
-  textCorrectAnswer: Movie4 ist richtig
+  imageMethode: {fileID: 21300000, guid: 79c86d98fa4cbbb40a65a89a54a7f150, type: 3}
+  imageFeedback: {fileID: 21300000, guid: bc5e8ad6f4dc31445b5ca150c4a60962, type: 3}
+  textFeedback: Es wird nach Filmen mit einer schlechteren Bewertung gefragt. Von
+    den aufgelisteten Filmen hat Poltergeist die schlechteste Bewertung
+  textCorrectAnswer: Poltergeist ist richtig

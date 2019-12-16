@@ -12,27 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c314cb9808d87a649956aac07ea8e87a, type: 3}
   m_Name: Association2
   m_EditorClassIdentifier: 
-  question: Empfehle Movie2
+  question: "Ich brauche wiedermal etwas zu lachen. Kannst du mir eine gute Kom\xF6die
+    empfehlen?"
   possibleSelections:
-  - RecommendationObject: {fileID: 11400000, guid: f50439296093a37438fbb45088c46e95,
+  - RecommendationObject: {fileID: 11400000, guid: 4778c1a5a21036e429d5be43f1038706,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 961b972e702c1fd4a83da2fb51214323,
+  - RecommendationObject: {fileID: 11400000, guid: 648622ee73d3c62409ce19969704bbc8,
+      type: 2}
+    correctAnswer: 0
+  - RecommendationObject: {fileID: 11400000, guid: 4c5aa5439d8691f4eb57b32cdb6e742f,
+      type: 2}
+    correctAnswer: 0
+  - RecommendationObject: {fileID: 11400000, guid: f325c59e974cf054c8995dd82753ca07,
       type: 2}
     correctAnswer: 1
-  - RecommendationObject: {fileID: 11400000, guid: 13909d314d23eb14fa543aa2af5dada9,
-      type: 2}
-    correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 0a18067c6196de34eb0f4c98f1066e81,
+  - RecommendationObject: {fileID: 11400000, guid: 885ea593e38305344b9879c82359fbcf,
       type: 2}
     correctAnswer: 0
   - RecommendationObject: {fileID: 11400000, guid: 78d5de94c36271b4e96d6b2d7b45686c,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: ed55085daf761734bba41ce580c6c2f3,
-      type: 2}
-    correctAnswer: 0
-  imageMethode: {fileID: 21300000, guid: 0b78f56800cbf8c4986a22edceef8dff, type: 3}
-  imageFeedback: {fileID: 21300000, guid: 0b78f56800cbf8c4986a22edceef8dff, type: 3}
-  textFeedback: Siehe Moviename
-  textCorrectAnswer: Movie2 ist richtig
+  imageMethode: {fileID: 21300000, guid: b01ced6d855130648867e30be15a631b, type: 3}
+  imageFeedback: {fileID: 21300000, guid: e60ec2e78767dad48b6ead29504c9765, type: 3}
+  textFeedback: "Es m\xFCssen nur Filme der Kategorie \"Kom\xF6die\" beachtet werden."
+  textCorrectAnswer: Knives Out ist richtig
