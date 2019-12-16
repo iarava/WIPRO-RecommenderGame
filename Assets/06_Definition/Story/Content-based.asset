@@ -30,7 +30,7 @@ MonoBehaviour:
       gegen\xFCber der realen Welt). Wenn du nun eine Empfehlung abgibst und weisst,
       welche Eigenschaften deinem Gegen\xFCber gefallen, so kannst du einen Film ausw\xE4hlen,
       der diesem am \xE4hnlichsten ist."
-    TutorialImage: {fileID: 21300000, guid: 1c64d8bd4205c024299f7b675e8b470b, type: 3}
+    TutorialImage: {fileID: 21300000, guid: 7e5ca6eebb628964b8c67f9a6d660624, type: 3}
   Outro:
     sentences:
     - "Ich habe gemerkt, dass meine Empfehlungen bereits sehr viel besser waren als

@@ -33,7 +33,7 @@ MonoBehaviour:
       am empfehlenswertesten ist.\r\n\nHast du den passenden Film gefunden, dann klicke
       ihn an und ziehe in mit der Maus \xFCber das Feld bei deiner Kollegin / deinem
       Kollegen.\r"
-    TutorialImage: {fileID: 21300000, guid: 0b78f56800cbf8c4986a22edceef8dff, type: 3}
+    TutorialImage: {fileID: 21300000, guid: 2a39b80f49adc1249adb67491c9bce0e, type: 3}
   Outro:
     sentences:
     - "Deine Vorschl\xE4ge kamen zu Beginn echt gut an!"
