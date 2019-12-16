@@ -12,27 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c314cb9808d87a649956aac07ea8e87a, type: 3}
   m_Name: Content-based2
   m_EditorClassIdentifier: 
-  question: Empfehle Movie2
+  question: "Kannst du mir einen Film empfehlen, der so toll ist wie der Film \xABOben\xBB?"
   possibleSelections:
-  - RecommendationObject: {fileID: 11400000, guid: f50439296093a37438fbb45088c46e95,
+  - RecommendationObject: {fileID: 11400000, guid: b9e2bc5e32aef924183682a8f04549bb,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 961b972e702c1fd4a83da2fb51214323,
+  - RecommendationObject: {fileID: 11400000, guid: 2ec55fceb632b5940ad6f3ca06e71876,
+      type: 2}
+    correctAnswer: 0
+  - RecommendationObject: {fileID: 11400000, guid: 2601f033fc83b624880d59922dc46305,
+      type: 2}
+    correctAnswer: 0
+  - RecommendationObject: {fileID: 11400000, guid: b78e63c1ddc16a24a8cc3aa02194ac1b,
+      type: 2}
+    correctAnswer: 0
+  - RecommendationObject: {fileID: 11400000, guid: 3ea0e5ee99725164781cd653e9733b9e,
       type: 2}
     correctAnswer: 1
-  - RecommendationObject: {fileID: 11400000, guid: 13909d314d23eb14fa543aa2af5dada9,
-      type: 2}
-    correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 0a18067c6196de34eb0f4c98f1066e81,
-      type: 2}
-    correctAnswer: 0
   - RecommendationObject: {fileID: 11400000, guid: 78d5de94c36271b4e96d6b2d7b45686c,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: ed55085daf761734bba41ce580c6c2f3,
-      type: 2}
-    correctAnswer: 0
-  imageMethode: {fileID: 21300000, guid: 1c64d8bd4205c024299f7b675e8b470b, type: 3}
-  imageFeedback: {fileID: 21300000, guid: 1c64d8bd4205c024299f7b675e8b470b, type: 3}
-  textFeedback: Siehe Moviename
-  textCorrectAnswer: Movie2 ist richtig
+  imageMethode: {fileID: 21300000, guid: 65aacfe9f197e8344b1163059c7cf952, type: 3}
+  imageFeedback: {fileID: 21300000, guid: 8b28b2b2f742ea243aa297a5652460ef, type: 3}
+  textFeedback: Ice Age hat am meisten gemeinsame Eigenschaften mit Oben
+  textCorrectAnswer: Ice Age ist richtig

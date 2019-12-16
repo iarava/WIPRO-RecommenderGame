@@ -12,27 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c314cb9808d87a649956aac07ea8e87a, type: 3}
   m_Name: Content-based5
   m_EditorClassIdentifier: 
-  question: Empfehle Movie5
+  question: Vorhin habe ich mir Deadpool angeschaut. Kannst du mir noch einen anderen
+    Film empfehlen?
   possibleSelections:
-  - RecommendationObject: {fileID: 11400000, guid: f50439296093a37438fbb45088c46e95,
+  - RecommendationObject: {fileID: 11400000, guid: 2cb6d2241a670894f8347903b01fa2c7,
+      type: 2}
+    correctAnswer: 0
+  - RecommendationObject: {fileID: 11400000, guid: c4bd1428a7e81cc4fb71746c264f2f10,
       type: 2}
     correctAnswer: 0
   - RecommendationObject: {fileID: 11400000, guid: 961b972e702c1fd4a83da2fb51214323,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 13909d314d23eb14fa543aa2af5dada9,
+  - RecommendationObject: {fileID: 11400000, guid: 4c5aa5439d8691f4eb57b32cdb6e742f,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 0a18067c6196de34eb0f4c98f1066e81,
+  - RecommendationObject: {fileID: 11400000, guid: f7f49242e503f9543bc65cbe5b4242a2,
       type: 2}
     correctAnswer: 0
-  - RecommendationObject: {fileID: 11400000, guid: 78d5de94c36271b4e96d6b2d7b45686c,
+  - RecommendationObject: {fileID: 11400000, guid: 3c72053d7d0b50843bca0eea26d428d7,
       type: 2}
     correctAnswer: 1
-  - RecommendationObject: {fileID: 11400000, guid: ed55085daf761734bba41ce580c6c2f3,
-      type: 2}
-    correctAnswer: 0
   imageMethode: {fileID: 21300000, guid: 1c64d8bd4205c024299f7b675e8b470b, type: 3}
   imageFeedback: {fileID: 21300000, guid: 1c64d8bd4205c024299f7b675e8b470b, type: 3}
-  textFeedback: Siehe Moviename
-  textCorrectAnswer: Movie5 ist richtig
+  textFeedback: Get Out hat am meisten gemeinsame Eigenschaften mit Deadpool
+  textCorrectAnswer: Get Out ist richtig
