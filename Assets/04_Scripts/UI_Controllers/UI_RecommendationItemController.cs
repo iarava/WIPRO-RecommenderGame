@@ -44,8 +44,6 @@ public class UI_RecommendationItemController : MonoBehaviour
             text.text = dataItems[i].RecommendationObject.NameItem;
 
             recommendationItems[i].IsCorrectItem = dataItems[i].correctAnswer;
-
-            text.color = recommendationItems[i].IsCorrectItem ? Color.green : Color.black;
         }
         
     }
