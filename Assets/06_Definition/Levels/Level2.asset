@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bcbd2782a2800544bcd8745b4d8ea2c, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: 
-  levelTime: 40
+  levelTime: 90
   levelName: Content-based
   storySequence: {fileID: 11400000, guid: 43ab701078981e3439f7062039b83cad, type: 2}
   recommendationPool: {fileID: 11400000, guid: c1cd3de8df6ec6e4fad6ae4034f14568, type: 2}
