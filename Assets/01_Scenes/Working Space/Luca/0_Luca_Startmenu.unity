@@ -744,6 +744,41 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6353667889061886608, guid: 6c74c9692f6c93645a59c26934c223b7,
+        type: 3}
+      propertyPath: m_text
+      value: "Dieses Spiel ist eine Projektarbeit f\xFCr das Bachelorstudium an der
+        Hochschule Luzern\n\nEs wurde in zusammenarbeit mit der Schindler Berufsbildung
+        entwickelt.\n\nZiel des Spiels ist es, den Personen vor dem Bildschirm auf
+        eine spielerische Art und Weise zu zeigen was Recommender Systems sind, wo
+        sie eingesetzt werden und wie sie funktionieren.\n\nKonzipiert und programmiert
+        wurde dieses Spiel von Luca Rava und Raphael Heer"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353667889061886608, guid: 6c74c9692f6c93645a59c26934c223b7,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353667889061886608, guid: 6c74c9692f6c93645a59c26934c223b7,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353667889061886608, guid: 6c74c9692f6c93645a59c26934c223b7,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353667889061886608, guid: 6c74c9692f6c93645a59c26934c223b7,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353667889061886608, guid: 6c74c9692f6c93645a59c26934c223b7,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c74c9692f6c93645a59c26934c223b7, type: 3}
 --- !u!1 &2032257075
