@@ -25,7 +25,7 @@ MonoBehaviour:
     correctAnswer: 0
   - RecommendationObject: {fileID: 11400000, guid: 648622ee73d3c62409ce19969704bbc8,
       type: 2}
-    correctAnswer: 1
+    correctAnswer: 0
   - RecommendationObject: {fileID: 11400000, guid: 50104bf2def9b4645a6a96a31ae18195,
       type: 2}
     correctAnswer: 0
