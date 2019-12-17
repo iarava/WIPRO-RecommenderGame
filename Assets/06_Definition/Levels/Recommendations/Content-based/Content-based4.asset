@@ -23,10 +23,10 @@ MonoBehaviour:
     correctAnswer: 0
   - RecommendationObject: {fileID: 11400000, guid: 961b972e702c1fd4a83da2fb51214323,
       type: 2}
-    correctAnswer: 0
+    correctAnswer: 1
   - RecommendationObject: {fileID: 11400000, guid: 4c5aa5439d8691f4eb57b32cdb6e742f,
       type: 2}
-    correctAnswer: 1
+    correctAnswer: 0
   - RecommendationObject: {fileID: 11400000, guid: f7f49242e503f9543bc65cbe5b4242a2,
       type: 2}
     correctAnswer: 0

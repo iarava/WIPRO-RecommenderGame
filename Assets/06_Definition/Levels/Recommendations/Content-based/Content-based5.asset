@@ -33,7 +33,7 @@ MonoBehaviour:
   - RecommendationObject: {fileID: 11400000, guid: 3c72053d7d0b50843bca0eea26d428d7,
       type: 2}
     correctAnswer: 1
-  imageMethode: {fileID: 21300000, guid: 1c64d8bd4205c024299f7b675e8b470b, type: 3}
-  imageFeedback: {fileID: 21300000, guid: 1c64d8bd4205c024299f7b675e8b470b, type: 3}
+  imageMethode: {fileID: 21300000, guid: 65aacfe9f197e8344b1163059c7cf952, type: 3}
+  imageFeedback: {fileID: 21300000, guid: 8b28b2b2f742ea243aa297a5652460ef, type: 3}
   textFeedback: Get Out hat am meisten gemeinsame Eigenschaften mit Deadpool
   textCorrectAnswer: Get Out ist richtig

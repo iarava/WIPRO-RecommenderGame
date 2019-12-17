@@ -34,6 +34,6 @@ MonoBehaviour:
       type: 2}
     correctAnswer: 0
   imageMethode: {fileID: 21300000, guid: 383663d26657d8141b247da85d6d4ac4, type: 3}
-  imageFeedback: {fileID: 21300000, guid: c6617bc0b0d8635429840faa2fa7029b, type: 3}
+  imageFeedback: {fileID: 21300000, guid: 55e18c765ecdb734b859cc523e443f95, type: 3}
   textFeedback: "Joker ist von den Eigenschaften her am \xE4hnlichsten zu John Wick"
   textCorrectAnswer: Joker ist richtig

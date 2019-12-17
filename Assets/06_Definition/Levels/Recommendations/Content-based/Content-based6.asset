@@ -16,7 +16,7 @@ MonoBehaviour:
   possibleSelections:
   - RecommendationObject: {fileID: 11400000, guid: 885ea593e38305344b9879c82359fbcf,
       type: 2}
-    correctAnswer: 0
+    correctAnswer: 1
   - RecommendationObject: {fileID: 11400000, guid: c4bd1428a7e81cc4fb71746c264f2f10,
       type: 2}
     correctAnswer: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
     correctAnswer: 0
   - RecommendationObject: {fileID: 11400000, guid: 961b972e702c1fd4a83da2fb51214323,
       type: 2}
-    correctAnswer: 1
+    correctAnswer: 0
   imageMethode: {fileID: 21300000, guid: 09e9ff2178e5fcc47b067d850f491a4a, type: 3}
   imageFeedback: {fileID: 21300000, guid: c782f574e634e884b9c55eb768e2d3ce, type: 3}
   textFeedback: Toy Story hat am meisten gemeinsame Eigenschaften mit Shrek

@@ -32,7 +32,7 @@ MonoBehaviour:
   - RecommendationObject: {fileID: 11400000, guid: 78d5de94c36271b4e96d6b2d7b45686c,
       type: 2}
     correctAnswer: 0
-  imageMethode: {fileID: 21300000, guid: 65aacfe9f197e8344b1163059c7cf952, type: 3}
-  imageFeedback: {fileID: 21300000, guid: 8b28b2b2f742ea243aa297a5652460ef, type: 3}
+  imageMethode: {fileID: 21300000, guid: 383663d26657d8141b247da85d6d4ac4, type: 3}
+  imageFeedback: {fileID: 21300000, guid: f5f0fe095dc78a344bf450bdb2d42bc5, type: 3}
   textFeedback: Ice Age hat am meisten gemeinsame Eigenschaften mit Oben
   textCorrectAnswer: Ice Age ist richtig
