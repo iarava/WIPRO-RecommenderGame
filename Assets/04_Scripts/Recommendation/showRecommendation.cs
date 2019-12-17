@@ -41,7 +41,9 @@ public class showRecommendation : MonoBehaviour
         recommendationFeedback.gameObject.SetActive(true);
         methodeController.gameObject.SetActive(false);
 
-        enableSelection(false);        
+        enableSelection(false);
+
+        RecommendationManager.Instance.LoadFeedbackContent();
     }
 
     private void enableSelection(bool enable)

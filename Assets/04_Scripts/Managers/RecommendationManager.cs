@@ -53,6 +53,10 @@ public class RecommendationManager : MonoBehaviour
     {
         WrongSelection(currentCustomer);
         gameLoop.GetLevelDefinition().RecommendationPool.previousDifficulty();
+    }
+
+    public void LoadFeedbackContent()
+    {
         ShowFeedback(recommendation);
     }
 
