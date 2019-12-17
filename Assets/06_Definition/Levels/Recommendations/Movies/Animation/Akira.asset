@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16d3c7f17ed13bf459ded1c5b3bb6ddd, type: 3}
   m_Name: Akira
   m_EditorClassIdentifier: 
-  nameItem: 
+  nameItem: Akira
   imageItem: {fileID: 21300000, guid: 1c6bd8928afaca84f8f5e03a93dd6290, type: 3}
