@@ -820,7 +820,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_Value: 1
-  m_Size: 0.5948013
+  m_Size: 0.50068045
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1217,7 +1217,8 @@ MonoBehaviour:
     intense  (Creator: Horrorpen)\nhttps://opengameart.org/content/game-music-loop-intense\n\nEnd
     Soundtrack  (Creator: cynicmusic)\nhttps://opengameart.org/content/victory-theme-for-rpg\n\nCorrect
     Answser  (Creator: HaelDB)\nhttps://opengameart.org/content/point-bell\n\nWrong
-    Answer  (Creator: qubodup)\nhttps://opengameart.org/content/energy-drain"
+    Answer  (Creator: qubodup)\nhttps://opengameart.org/content/energy-drain\n\n\nFolgende
+    Unity Plugins wurden bei der Entwicklung verwendet:\n- Cinemachine\n- TextMeshPro"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1286,12 +1287,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 25.905579, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 6353667889061886608}
-    characterCount: 928
+    characterCount: 1019
     spriteCount: 0
-    spaceCount: 110
-    wordCount: 116
+    spaceCount: 124
+    wordCount: 128
     linkCount: 0
-    lineCount: 26
+    lineCount: 31
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
