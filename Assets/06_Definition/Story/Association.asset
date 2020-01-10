@@ -28,10 +28,10 @@ MonoBehaviour:
     TutorialTitel: Tutorial Association
     Description: "Um die bestm\xF6glichsten Vorschl\xE4ge geben zu k\xF6nnen, holst
       du dir ein paar Statistiken der Webseite imdb.com zur Hilfe. Diese zeigen dir
-      an, welche Filme wie gut bewertet wurden.\n\nUm eine Empfehlung ab zu geben,
-      schau auf deine Liste. Probiere aufgrund der Frage heraus zu finden, welchen
-      der Filme am empfehlenswertesten ist.\r\n\nMit den Tasten W, A, S und D kannst
-      du dich zu deinen Kolleginnen und Kollegen bewegen um ihnen Empfehlungen abzugeben.\n\nHast
+      an, welche Filme wie gut bewertet wurden.\nUm eine Empfehlung ab zu geben, schau
+      auf deine Liste. Probiere aufgrund der Frage heraus zu finden, welchen der Filme
+      am empfehlenswertesten ist.\r\nMit den Tasten W, A, S und D kannst du dich zu
+      deinen Kolleginnen und Kollegen bewegen um ihnen Empfehlungen abzugeben.\nHast
       du den passenden Film gefunden, dann klicke ihn an und ziehe in mit der Maus
       \xFCber das Feld bei deiner Kollegin / deinem Kollegen.\r"
     TutorialImage: {fileID: 21300000, guid: 2a39b80f49adc1249adb67491c9bce0e, type: 3}
