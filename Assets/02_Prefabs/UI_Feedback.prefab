@@ -497,7 +497,6 @@ GameObject:
   - component: {fileID: 4071189410943412999}
   - component: {fileID: 6211569872587209889}
   - component: {fileID: 5693727389361955088}
-  - component: {fileID: 963716894519289950}
   m_Layer: 5
   m_Name: RightAnswer
   m_TagString: Untagged
@@ -642,18 +641,6 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &963716894519289950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4822525251485240119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f76ae6e701cfc6c4b8566f2347f9183a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5871829581998614285
 GameObject:
   m_ObjectHideFlags: 0
