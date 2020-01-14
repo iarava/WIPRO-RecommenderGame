@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,8 +8,7 @@ public class UI_RecommendationFeedback : MonoBehaviour
     private TextMeshProUGUI correctAnswer;
     [SerializeField]
     private TextMeshProUGUI feedback;
-
-
+    
     private Image _feedbackImage;
     private TextMeshProUGUI _correctAnswer;
     private TextMeshProUGUI _feedback;

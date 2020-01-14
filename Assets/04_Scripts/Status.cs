@@ -1,5 +1,4 @@
-﻿
-public enum Status
+﻿public enum Status
 {
     Idle,
     Waiting,
