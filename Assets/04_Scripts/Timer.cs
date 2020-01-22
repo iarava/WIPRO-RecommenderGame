@@ -45,7 +45,7 @@ public class Timer : MonoBehaviour
         }
     }
        
-    private void onDestroy()
+    private void OnDestroy()
     {
         LevelManager.Instance.stopGame -= stopRunningTimer;
         LevelManager.Instance.newLevelLoaded -= initializeTimer;

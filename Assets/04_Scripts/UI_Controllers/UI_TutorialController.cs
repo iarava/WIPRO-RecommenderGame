@@ -32,7 +32,7 @@ public class UI_TutorialController : MonoBehaviour
 
     }
 
-    private void onDestroy()
+    private void OnDestroy()
     {
         StoryManager.Instance.DisplayTutorial -= handleDisplayTutorial;
     }

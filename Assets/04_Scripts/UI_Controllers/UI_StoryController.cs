@@ -21,7 +21,7 @@ public class UI_StoryController : MonoBehaviour
         textSentence.text = sentence;
     }
 
-    private void onDestroy()
+    private void OnDestroy()
     {
         StoryManager.Instance.DisplayDialogue -= handleDisplaySentence;
     }
